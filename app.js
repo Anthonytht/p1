@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * LOGIKA INTERAKTYWNA STRONY DLA PRZEDSIĘBIORSTWA BRANŻY OZE
+ * GREENERA ENERGY - LOGIKA INTERAKTYWNA PORTALU B2B
  * ==========================================================================
  */
 
@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currency: 'PLN',      // 'PLN' | 'EUR'
     taxRate: 1.00,        // 1.00 = netto, 1.23 = brutto (+23%)
     currentCategory: 'all',
-    searchQuery: '',
-    placeholdersHighlighted: false
+    searchQuery: ''
   };
 
   // 2. Elementy DOM
@@ -21,18 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   const themeIcon = document.getElementById('themeIcon');
-  const btnToggleHighlight = document.getElementById('btnToggleHighlight');
-  const highlightBtnLabel = document.getElementById('highlightBtnLabel');
-  const btnOpenGuide = document.getElementById('btnOpenGuide');
-  const btnCloseGuide = document.getElementById('btnCloseGuide');
-  const btnConfirmGuide = document.getElementById('btnConfirmGuide');
-  const guideModal = document.getElementById('guideModal');
 
   const productModal = document.getElementById('productModal');
   const btnCloseProductModal = document.getElementById('btnCloseProductModal');
   const modalProductSku = document.getElementById('modalProductSku');
   const modalProductTitle = document.getElementById('modalProductTitle');
   const modalCtaContact = document.getElementById('modalCtaContact');
+  const btnDownloadSpecSheet = document.getElementById('btnDownloadSpecSheet');
 
   const productFilterBtns = document.querySelectorAll('#productFilterGroup .filter-btn');
   const productSearchInput = document.getElementById('productSearchInput');
@@ -58,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // OBSŁUGA MOTYWU JASNY / CIEMNY
+  // OBSŁUGA MOTYWU JASNY / CIEMNY (NOWOCZESNY I CZYSTY)
   // ==========================================================================
-  const savedTheme = localStorage.getItem('oze_theme') || 'dark';
+  const savedTheme = localStorage.getItem('greenera_theme') || 'dark';
   if (savedTheme === 'light') {
     body.classList.add('light-theme');
     updateThemeIcon(true);
@@ -69,13 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
     updateThemeIcon(false);
   }
 
-  themeToggleBtn.addEventListener('click', () => {
-    const isLight = body.classList.toggle('light-theme');
-    localStorage.setItem('oze_theme', isLight ? 'light' : 'dark');
-    updateThemeIcon(isLight);
-  });
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = body.classList.toggle('light-theme');
+      localStorage.setItem('greenera_theme', isLight ? 'light' : 'dark');
+      updateThemeIcon(isLight);
+    });
+  }
 
   function updateThemeIcon(isLight) {
+    if (!themeIcon) return;
     if (isLight) {
       themeIcon.innerHTML = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
     } else {
@@ -84,68 +81,56 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // TRYB PODŚWIETLANIA PÓL DO UZUPEŁNIENIA
-  // ==========================================================================
-  btnToggleHighlight.addEventListener('click', () => {
-    state.placeholdersHighlighted = !state.placeholdersHighlighted;
-    body.classList.toggle('highlight-placeholders', state.placeholdersHighlighted);
-    
-    if (state.placeholdersHighlighted) {
-      const phCount = document.querySelectorAll('.ph-tag, .ph-block').length;
-      highlightBtnLabel.textContent = `Ukryj podświetlenie (${phCount} pól)`;
-      btnToggleHighlight.style.background = 'var(--color-solar)';
-      btnToggleHighlight.style.color = '#0f172a';
-    } else {
-      highlightBtnLabel.textContent = 'Podświetl pola [DO UZUPEŁNIENIA]';
-      btnToggleHighlight.style.background = '';
-      btnToggleHighlight.style.color = '';
-    }
-  });
-
-  // ==========================================================================
-  // MODALE: PRZEWODNIK & SZCZEGÓŁY PRODUKTU
+  // MODAL KARTY PRODUKTU
   // ==========================================================================
   function openModal(modal) {
+    if (!modal) return;
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 
   function closeModal(modal) {
+    if (!modal) return;
     modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  btnOpenGuide.addEventListener('click', () => openModal(guideModal));
-  btnCloseGuide.addEventListener('click', () => closeModal(guideModal));
-  btnConfirmGuide.addEventListener('click', () => closeModal(guideModal));
+  if (btnCloseProductModal && productModal) {
+    btnCloseProductModal.addEventListener('click', () => closeModal(productModal));
+  }
 
-  btnCloseProductModal.addEventListener('click', () => closeModal(productModal));
-
-  // Zamykanie przy kliknięciu w tło modala
-  [guideModal, productModal].forEach(modal => {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal(modal);
+  if (productModal) {
+    productModal.addEventListener('click', (e) => {
+      if (e.target === productModal) {
+        closeModal(productModal);
       }
     });
-  });
+  }
 
   // Kliknięcie w przycisk "Szczegóły" na karcie produktu
   document.querySelectorAll('.btn-product-details').forEach(btn => {
     btn.addEventListener('click', () => {
-      const sku = btn.getAttribute('data-sku') || '[SKU]';
-      const name = btn.getAttribute('data-name') || '[Produkt OZE]';
+      const sku = btn.getAttribute('data-sku') || 'GE-PROD';
+      const name = btn.getAttribute('data-name') || 'Komponent OZE GreenEra';
 
-      modalProductSku.textContent = `[SKU: ${sku}]`;
-      modalProductTitle.textContent = `[Specyfikacja: ${name}]`;
-      modalCtaContact.href = `#contact`;
+      if (modalProductSku) modalProductSku.textContent = `SKU: ${sku}`;
+      if (modalProductTitle) modalProductTitle.textContent = name;
+      if (modalCtaContact) modalCtaContact.href = `#contact`;
       openModal(productModal);
     });
   });
 
-  modalCtaContact.addEventListener('click', () => {
-    closeModal(productModal);
-  });
+  if (modalCtaContact) {
+    modalCtaContact.addEventListener('click', () => {
+      closeModal(productModal);
+    });
+  }
+
+  if (btnDownloadSpecSheet) {
+    btnDownloadSpecSheet.addEventListener('click', () => {
+      alert('Pobieranie karty katalogowej: Plik PDF z parametrami technicznymi GreenEra zostanie pobrany.');
+    });
+  }
 
   // ==========================================================================
   // FILTROWANIE I WYSZUKIWARKA PRODUKTÓW
@@ -159,10 +144,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  productSearchInput.addEventListener('input', (e) => {
-    state.searchQuery = e.target.value.toLowerCase().trim();
-    filterProducts();
-  });
+  if (productSearchInput) {
+    productSearchInput.addEventListener('input', (e) => {
+      state.searchQuery = e.target.value.toLowerCase().trim();
+      filterProducts();
+    });
+  }
 
   function filterProducts() {
     productCards.forEach(card => {
@@ -182,6 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================================================
   // KALKULACJA CEN W TABELI I KARTACH (PLN / EUR & NETTO / BRUTTO)
+  // Czyste formatowanie kwot bez nawiasów kwadratowych
   // ==========================================================================
   currencyBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -208,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       maximumFractionDigits: 2
     }).format(amount);
 
-    return `[${formattedNum} ${currency}]`;
+    return `${formattedNum} ${currency}`;
   }
 
   function updateAllPrices() {
@@ -236,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // POBIERANIE CENNIKA (DEMO ALERT / DOWNLOAD SIMULATOR)
+  // POBIERANIE CENNIKA PDF
   // ==========================================================================
   const btnDownloadPriceList = document.getElementById('btnDownloadPriceList');
   const footerDownloadPdfLink = document.getElementById('footerDownloadPdfLink');
@@ -245,32 +233,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (el) {
       el.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('Generowanie i pobieranie cennika B2B: Tutaj zostanie podpięty bezpośredni plik PDF z oficjalnym cennikiem hurtowym Twojej firmy OZE.');
+        alert('Pobieranie oficjalnego cennika hurtowego GreenEra B2B (PDF). W przypadku zapotrzebowania na indywidualne warunki ramowe prosimy o kontakt z działem handlowym.');
       });
     }
   });
 
   // ==========================================================================
   // KALKULATOR CZASU I KOSZTU DOSTAWY
+  // Czyste wartości bez bracketów
   // ==========================================================================
   const deliveryRules = {
     mazowieckie: {
       pallet_standard: { time: '24 godziny', cost: '140,00 PLN' },
       pallet_pv: { time: '24 - 48 godzin', cost: '220,00 PLN' },
       hds_fleet: { time: '24 - 48 godzin', cost: '450,00 PLN (Własny HDS)' },
-      ftl_farm: { time: '48 - 72 godziny', cost: 'Wycena FTL dedykowana' }
+      ftl_farm: { time: '24 - 48 godzin', cost: 'Wycena FTL dedykowana' }
     },
     slaskie: {
       pallet_standard: { time: '24 - 48 godzin', cost: '160,00 PLN' },
       pallet_pv: { time: '24 - 48 godzin', cost: '240,00 PLN' },
       hds_fleet: { time: '48 godzin', cost: '550,00 PLN (Własny HDS)' },
-      ftl_farm: { time: '48 - 72 godziny', cost: 'Wycena FTL dedykowana' }
+      ftl_farm: { time: '48 godzin', cost: 'Wycena FTL dedykowana' }
     },
     wielkopolskie: {
       pallet_standard: { time: '24 - 48 godzin', cost: '160,00 PLN' },
       pallet_pv: { time: '24 - 48 godzin', cost: '240,00 PLN' },
       hds_fleet: { time: '48 godzin', cost: '580,00 PLN (Własny HDS)' },
-      ftl_farm: { time: '48 - 72 godziny', cost: 'Wycena FTL dedykowana' }
+      ftl_farm: { time: '48 godzin', cost: 'Wycena FTL dedykowana' }
     },
     pomorskie: {
       pallet_standard: { time: '24 - 48 godzin', cost: '180,00 PLN' },
@@ -282,67 +271,77 @@ document.addEventListener('DOMContentLoaded', () => {
       pallet_standard: { time: '24 - 48 godzin', cost: '180,00 PLN' },
       pallet_pv: { time: '48 - 72 godzin', cost: '280,00 PLN' },
       hds_fleet: { time: 'Indywidualny grafik', cost: 'Kalkulacja za km' },
-      ftl_farm: { time: 'Zgodnie z harmonogramem', cost: 'Wycena FTL' }
+      ftl_farm: { time: 'Harmonogram inwestora', cost: 'Wycena dedykowana' }
     }
   };
 
   function updateShippingEstimate() {
+    if (!shippingRegion || !shippingType || !calcDeliveryTime || !calcDeliveryCost) return;
     const region = shippingRegion.value;
     const type = shippingType.value;
 
     const data = deliveryRules[region]?.[type] || { time: '24 - 48 godzin', cost: 'Kalkulacja wg wagi' };
-    calcDeliveryTime.textContent = `[${data.time}]`;
-    calcDeliveryCost.textContent = `[${data.cost}]`;
+    calcDeliveryTime.textContent = data.time;
+    calcDeliveryCost.textContent = data.cost;
   }
 
-  shippingRegion.addEventListener('change', updateShippingEstimate);
-  shippingType.addEventListener('change', updateShippingEstimate);
+  if (shippingRegion && shippingType) {
+    shippingRegion.addEventListener('change', updateShippingEstimate);
+    shippingType.addEventListener('change', updateShippingEstimate);
+    updateShippingEstimate();
+  }
 
   // ==========================================================================
   // OBSŁUGA FORMULARZA KONTAKTOWEGO B2B
   // ==========================================================================
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    const fullName = document.getElementById('formFullName').value.trim();
-    const company = document.getElementById('formCompany').value.trim();
-    const email = document.getElementById('formEmail').value.trim();
+      const fullName = document.getElementById('formFullName')?.value.trim() || '';
+      const company = document.getElementById('formCompany')?.value.trim() || '';
+      const email = document.getElementById('formEmail')?.value.trim() || '';
 
-    if (!fullName || !company || !email) {
-      alert('Proszę wypełnić wymagane pola formularza.');
-      return;
-    }
+      if (!fullName || !company || !email) {
+        alert('Proszę wypełnić wymagane pola formularza.');
+        return;
+      }
 
-    // Symulacja pomyślnego zapytania ofertowego
-    formSuccessAlert.style.display = 'block';
-    formSuccessAlert.innerHTML = `
-      <strong>✓ Dziękujemy, ${fullName} (${company})!</strong><br>
-      Twoje zapytanie ofertowe zostało zarejestrowane. Doradca techniczny skontaktuje się pod adresem: <u>${email}</u>.
-    `;
+      if (formSuccessAlert) {
+        formSuccessAlert.style.display = 'block';
+        formSuccessAlert.innerHTML = `
+          <strong>✓ Dziękujemy, ${fullName} (${company})!</strong><br>
+          Twoje zapytanie ofertowe zostało zarejestrowane w systemie GreenEra. Dedykowany doradca techniczno-handlowy skontaktuje się pod adresem: <u>${email}</u> w ciągu 24 godzin.
+        `;
 
-    contactForm.reset();
+        contactForm.reset();
 
-    setTimeout(() => {
-      formSuccessAlert.style.display = 'none';
-    }, 8000);
-  });
+        setTimeout(() => {
+          formSuccessAlert.style.display = 'none';
+        }, 8000);
+      }
+    });
+  }
 
   // ==========================================================================
   // MOBILE MENU & NAVBAR SCROLL BEHAVIOR
   // ==========================================================================
-  mobileMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-    mobileMenuBtn.textContent = navMenu.classList.contains('open') ? '✕' : '☰';
-  });
+  if (mobileMenuBtn && navMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      mobileMenuBtn.textContent = navMenu.classList.contains('open') ? '✕' : '☰';
+    });
+  }
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-      mobileMenuBtn.textContent = '☰';
+      if (navMenu) navMenu.classList.remove('open');
+      if (mobileMenuBtn) mobileMenuBtn.textContent = '☰';
     });
   });
 
   window.addEventListener('scroll', () => {
+    if (!siteHeader) return;
     if (window.scrollY > 40) {
       siteHeader.classList.add('scrolled');
     } else {
@@ -357,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function highlightActiveNavLink() {
     let currentId = '';
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 140;
 
     sections.forEach(sec => {
       const top = sec.offsetTop;

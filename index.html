@@ -3,29 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[NAZWA FIRMY OZE] | Specjalistyczne Rozwiązania OZE, Komponenty i Dystrybucja B2B</title>
-  <meta name="description" content="Szablon profesjonalnego portalu dla firmy branży OZE: oferta specjalistycznych produktów, magazynów energii, fotowoltaiki, pomp ciepła, cennik B2B, logistyka i dystrybucja.">
+  <title>GreenEra | Nowoczesne Technologie OZE, Magazyny Energii BESS i Dystrybucja B2B</title>
+  <meta name="description" content="GreenEra to autoryzowany dostawca innowacyjnych technologii OZE, przemysłowych magazynów energii BESS oraz modułów fotowoltaicznych Tier 1 dla przemysłu, instalatorów i deweloperów farm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark-theme">
 
   <!-- ==========================================================================
-       PASEK NARZĘDZI SZABLONU (DO WYPEŁNIENIA)
+       GÓRNY PASEK INFORMACYJNY (TOP BAR)
        ========================================================================== -->
-  <aside class="template-bar" id="templateBar" aria-label="Narzędzia szablonu">
-    <div class="template-bar-info">
-      <span class="template-badge">Szablon OZE</span>
-      <span>Sekcje przygotowane do uzupełnienia danymi Twojego przedsiębiorstwa</span>
-    </div>
-    <div class="template-actions">
-      <button type="button" class="btn-toggle-highlight" id="btnToggleHighlight" title="Podświetl lub ukryj znaczniki do uzupełnienia">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-        <span id="highlightBtnLabel">Podświetl pola [DO UZUPEŁNIENIA]</span>
-      </button>
-      <button type="button" class="btn-toggle-highlight" id="btnOpenGuide" style="border-color: rgba(255,255,255,0.2); color: #cbd5e1;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        Lista sekcji
-      </button>
+  <aside class="top-info-strip" aria-label="Informacje kontaktowe i status">
+    <div class="container top-info-inner">
+      <div class="top-info-left">
+        <span class="hub-status-dot"></span>
+        <span>GreenEra B2B Energy Hub • Warszawa / Park Logistyczny A2</span>
+        <span class="top-sep">|</span>
+        <span class="top-accent">Autoryzowany Dystrybutor Tier 1</span>
+      </div>
+      <div class="top-info-right">
+        <a href="tel:+48223079010" class="top-info-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +48 22 307 90 10
+        </a>
+        <span class="top-sep">|</span>
+        <a href="mailto:b2b@greenera.pl" class="top-info-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          b2b@greenera.pl
+        </a>
+      </div>
     </div>
   </aside>
 
@@ -35,17 +43,18 @@
   <header class="site-header" id="siteHeader">
     <div class="container">
       <nav class="navbar" aria-label="Główna nawigacja">
-        <a href="#home" class="brand-logo" title="Strona główna">
+        <a href="#home" class="brand-logo" title="GreenEra - Strona główna">
           <div class="brand-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
-          <span class="ph-tag" title="Pole do wpisania nazwy przedsiębiorstwa">[NAZWA TWOJEJ FIRMY OZE]</span>
+          <span class="brand-name">Green<span class="brand-accent">Era</span></span>
         </a>
 
         <ul class="nav-menu" id="navMenu">
           <li><a href="#home" class="nav-link active">Strona Główna</a></li>
-          <li><a href="#about" class="nav-link">Informacje Ogólne</a></li>
-          <li><a href="#products" class="nav-link">Oferta i Cennik</a></li>
+          <li><a href="#about" class="nav-link">O GreenEra</a></li>
+          <li><a href="#products" class="nav-link">Oferta Produktowa</a></li>
+          <li><a href="#pricing" class="nav-link">Cennik B2B</a></li>
           <li><a href="#distribution" class="nav-link">Dystrybucja i Dostawa</a></li>
           <li><a href="#contact" class="nav-link">Kontakt</a></li>
         </ul>
@@ -55,7 +64,7 @@
             <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           </button>
           <a href="#contact" class="btn btn-primary btn-sm">
-            <span>[ZAPYTAJ O OFERTĘ]</span>
+            <span>Zapytaj o wycenę</span>
           </a>
           <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Otwórz menu mobilne">
             ☰
@@ -74,43 +83,43 @@
         <div class="hero-grid">
           <div class="hero-content">
             <div class="section-eyebrow">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
-              <span>[LIDER BRANŻY ODNAWIALNYCH ŹRÓDEŁ ENERGII]</span>
+              <span class="eyebrow-dot"></span>
+              <span>Nowa Era Czystej Energii & BESS</span>
             </div>
 
             <h1 class="hero-title">
-              <span class="gradient-text">[NOWOCZESNE TECHNOLOGIE OZE]</span><br>
-              <span class="ph-tag" style="font-size: 0.7em;">[WPISZ GŁÓWNE HASŁO BIZNESOWE FIRMY]</span>
+              <span class="gradient-text">Energia Przyszłości.</span><br>
+              Otwórz swój biznes na nowe możliwości.
             </h1>
 
-            <div class="ph-block">
-              [TUTAJ WSTAW GŁÓWNY PODTYTUŁ STRONY GŁÓWNEJ: Np. Dystrybucja certyfikowanych komponentów fotowoltaicznych, magazynów energii BESS oraz pomp ciepła najwyższej klasy sprawności dla instalatorów, generalnych wykonawców i deweloperów farm wielkoskalowych.]
-            </div>
+            <p class="hero-description">
+              GreenEra łączy zaawansowaną inżynierię technologiczną z bezpośrednią dystrybucją komponentów OZE najwyższej klasy sprawności. Dostarczamy certyfikowane moduły bifacial N-Type, przemysłowe magazyny energii BESS oraz kompleksowe rozwiązania dla wielkoskalowych inwestycji w Europie Środkowej.
+            </p>
 
             <div class="hero-cta-group">
               <a href="#products" class="btn btn-primary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-                <span>[PRZEGLĄDAJ KATALOG I CENNIK]</span>
+                <span>Przeglądaj katalog i cennik</span>
               </a>
               <a href="#distribution" class="btn btn-secondary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                <span>[WARUNKI DOSTAWY I LOGISTYKA]</span>
+                <span>Warunki dostaw i logistyka</span>
               </a>
             </div>
 
-            <!-- Liczniki i Statystyki - Placeholder -->
+            <!-- Liczniki i Statystyki GreenEra -->
             <div class="hero-stats-bar">
               <div class="stat-item">
-                <span class="stat-number ph-tag">[+X MW]</span>
-                <span class="stat-label">[Dostarczona moc w modułach]</span>
+                <span class="stat-number">+520 MW</span>
+                <span class="stat-label">Dostarczona łączna moc</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number ph-tag">[X 000 m²]</span>
-                <span class="stat-label">[Powierzchnia magazynów B2B]</span>
+                <span class="stat-number">25 000 m²</span>
+                <span class="stat-label">Magazyn centralny klasy A+</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number ph-tag">[24/48h]</span>
-                <span class="stat-label">[Czas wysyłki komponentów]</span>
+                <span class="stat-number">24 / 48h</span>
+                <span class="stat-label">Ekspedycja przesyłek B2B</span>
               </div>
             </div>
           </div>
@@ -119,15 +128,15 @@
           <div class="hero-visual-card">
             <span class="hero-floating-badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              [KOMPONENTY TIER 1 / TUV CERTIFIED]
+              Certyfikacja Tier 1 • TÜV Rheinland
             </span>
-            <img src="assets/images/hero_banner.jpg" alt="Nowoczesna infrastruktura energii odnawialnej OZE" loading="lazy">
+            <img src="assets/images/hero_banner.jpg" alt="Infrastruktura energii odnawialnej GreenEra - fotowoltaika, BESS i farmy wiatrowe" loading="lazy">
             <div class="hero-card-overlay">
               <div>
-                <strong style="display: block; font-size: 1rem;">[PROJEKTY PRZEMYSŁOWE I KOMERCYJNE]</strong>
-                <span style="font-size: 0.85rem; color: #94a3b8;">[Wstaw podpis realizacji lub partnera technologicznego]</span>
+                <strong style="display: block; font-size: 1.05rem; font-weight: 700;">Inwestycje Przemysłowe & Wielkoskalowe</strong>
+                <span style="font-size: 0.85rem; color: #cbd5e1;">Projekt zrealizowany w formule zintegrowanego BESS</span>
               </div>
-              <span class="ph-tag">[STATUS: AKTYWNY PROJEKT]</span>
+              <span class="status-pill status-active">Aktywny projekt</span>
             </div>
           </div>
         </div>
@@ -135,56 +144,67 @@
     </section>
 
     <!-- ==========================================================================
-         SEKCJA 2: INFORMACJE OGÓLNE (ABOUT)
+         SEKCJA 2: INFORMACJE OGÓLNE (ABOUT GREENERA)
          ========================================================================== -->
     <section id="about" class="section-spacing">
       <div class="container">
         <div class="text-center">
           <div class="section-eyebrow">
-            <span>[PROFIL PRZEDSIĘBIORSTWA]</span>
+            <span class="eyebrow-dot"></span>
+            <span>Profil Przedsiębiorstwa</span>
           </div>
-          <h2 class="section-title">Informacje Ogólne o Firmie</h2>
+          <h2 class="section-title">Otwieramy Nowe Perspektywy dla Energii</h2>
           <p class="section-subtitle">
-            Poznaj naszą strukturę, wartości operacyjne oraz zaplecze inżynieryjne w sektorze transformacji energetycznej.
+            GreenEra to technologiczny partner transformacji energetycznej. Zapewniamy stabilne zaplecze sprzętowe, inżynieryjne i logistyczne dla nowoczesnego biznesu.
           </p>
         </div>
 
-        <div class="ph-block" style="max-width: 900px; margin: 0 auto 40px auto;">
-          <strong>[SEKCJA GŁÓWNA O FIRMIE]:</strong><br>
-          Tutaj wprowadź oficjalną notę o spółce: rok założenia firmy OZE, profil działalności, zasięg rynkowy (Polska / kraje UE), strukturę kapitałową, model współpracy (dystrybutor autoryzowany, importer bezpośredni, partner instalatorski) oraz kluczowe przewagi konkurencyjne na rynku odnawialnych źródeł energii.
+        <div class="company-lead-card">
+          <div class="company-lead-header">
+            <div class="company-lead-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 4px;">GreenEra Sp. z o.o. – Lider Dystrybucji i Technologii OZE</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">Autoryzowany importer bezpośredni, dystrybutor Tier 1 oraz integrator systemów magazynowania energii BESS.</p>
+            </div>
+          </div>
+          <p class="company-lead-text">
+            Od momentu powstania GreenEra wyznacza nowe standardy w segmencie B2B odnawialnych źródeł energii. Obsługujemy generalnych wykonawców farm PV, spółki energetyczne, zakłady produkcyjne oraz certyfikowane firmy instalatorskie. Łączymy bezpośredni import komponentów z wiodących fabryk Tier 1 z autorskim wsparciem inżynieryjnym, badaniami flash report przed wysyłką oraz dedykowanym serwisem gwarancyjnym na terenie całej Polski.
+          </p>
         </div>
 
         <div class="about-grid">
-          <!-- Karta 1: Misja i Cele -->
+          <!-- Karta 1: Misja i Transformacja -->
           <div class="oze-card">
             <div class="oze-card-header">
               <div class="icon-box icon-box-emerald">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               </div>
               <div>
-                <span class="ph-tag">[FILAR STRATEGICZNY 1]</span>
-                <h3>[Misja i Transformacja OZE]</h3>
+                <span class="card-kicker">Filar Strategiczny 01</span>
+                <h3>Zielona Dekarbonizacja</h3>
               </div>
             </div>
-            <div class="ph-block">
-              [Opisz misję przedsiębiorstwa: np. przyspieszanie dekarbonizacji przedsiębiorstw i gospodarstw poprzez dostarczanie sprawdzonych technologicznie urządzeń o najniższym współczynniku degradacji mocy.]
-            </div>
+            <p class="oze-card-text">
+              Wspieramy przedsiębiorstwa w redukcji śladu węglowego i optymalizacji kosztów operacyjnych. Wdrażamy systemy o najniższym współczynniku degradacji mocy i certyfikowanym bilansie emisyjnym ESG.
+            </p>
           </div>
 
-          <!-- Karta 2: Innowacje i BESS -->
+          <!-- Karta 2: Inżynieria i BESS -->
           <div class="oze-card">
             <div class="oze-card-header">
               <div class="icon-box icon-box-solar">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
               </div>
               <div>
-                <span class="ph-tag">[FILAR STRATEGICZNY 2]</span>
-                <h3>[Inżynieria i Technologia]</h3>
+                <span class="card-kicker">Filar Strategiczny 02</span>
+                <h3>Inżynieria & Systemy BESS</h3>
               </div>
             </div>
-            <div class="ph-block">
-              [Opisz kompetencje technologiczne: wsparcie w doborze magazynów energii BESS, audyty techniczne falowników hybrydowych, integracja z systemami SCADA i systemami EMS.]
-            </div>
+            <p class="oze-card-text">
+              Dedykowany zespół inżynierów projektuje wielkoskalowe magazyny energii BESS, integruje falowniki hybrydowe z systemami SCADA/EMS oraz konfiguruje autokonsumpcję w taryfach dynamicznych.
+            </p>
           </div>
 
           <!-- Karta 3: Bezpieczeństwo i Serwis -->
@@ -194,36 +214,41 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div>
-                <span class="ph-tag">[FILAR STRATEGICZNY 3]</span>
-                <h3>[Gwarancja i Dział Serwisu]</h3>
+                <span class="card-kicker">Filar Strategiczny 03</span>
+                <h3>Gwarancja SLA & Serwis PL</h3>
               </div>
             </div>
-            <div class="ph-block">
-              [Opisz procedury gwarancyjne: wsparcie serwisowe SLA w Polsce, gwarancje producenta do 25-30 lat, autoryzowany serwis falowników i modułów na terenie kraju.]
-            </div>
+            <p class="oze-card-text">
+              Zapewniamy polskie zaplecze serwisowe z gwarantowanym czasem reakcji SLA do 24 godzin. Wszystkie urządzenia objęte są oficjalną gwarancją producenta sięgającą do 25-30 lat.
+            </p>
           </div>
         </div>
 
         <!-- Pasek certyfikatów i akredytacji -->
         <div class="cert-strip">
           <div class="cert-strip-title">
-            <span class="ph-tag">[CERTYFIKATY, NORMY I AKREDYTACJE FIRMY]</span>
+            <span>Certyfikaty, Akredytacje i Standardy Jakości GreenEra:</span>
           </div>
           <div class="cert-badges">
             <div class="cert-badge-item">
-              <span>🛡️ [ISO 9001 / ISO 14001]</span>
+              <span class="cert-icon">🛡️</span>
+              <span>ISO 9001 / ISO 14001</span>
             </div>
             <div class="cert-badge-item">
-              <span>⚡ [Certyfikacja TÜV Rheinland]</span>
+              <span class="cert-icon">⚡</span>
+              <span>Certyfikacja TÜV Rheinland</span>
             </div>
             <div class="cert-badge-item">
-              <span>📋 [Zgodność NC RfG / UDT]</span>
+              <span class="cert-icon">📋</span>
+              <span>Zgodność NC RfG / UDT</span>
             </div>
             <div class="cert-badge-item">
-              <span>🌱 [Standard ESG & Ślad Węglowy]</span>
+              <span class="cert-icon">🌱</span>
+              <span>Standard ESG & EPD</span>
             </div>
             <div class="cert-badge-item">
-              <span class="ph-tag">[DODAJ KOLEJNY ATEST]</span>
+              <span class="cert-icon">🌟</span>
+              <span>BloombergNEF Tier 1</span>
             </div>
           </div>
         </div>
@@ -233,15 +258,16 @@
     <!-- ==========================================================================
          SEKCJA 3: OFERTA SPECJALISTYCZNYCH PRODUKTÓW WRAZ Z CENNIKIEM
          ========================================================================== -->
-    <section id="products" class="section-spacing" style="background: rgba(255,255,255,0.01);">
+    <section id="products" class="section-spacing section-alternate">
       <div class="container">
         <div class="text-center">
           <div class="section-eyebrow">
-            <span>[PORTFOLIO SPECJALISTYCZNE]</span>
+            <span class="eyebrow-dot"></span>
+            <span>Portfolio Komponentów OZE</span>
           </div>
-          <h2 class="section-title">Oferta Produktowa i Komponenty OZE</h2>
+          <h2 class="section-title">Specjalistyczne Urządzenia i Technologie</h2>
           <p class="section-subtitle">
-            Dedykowane rozwiązania dla instalacji komercyjnych, przemysłowych (C&I) oraz farm fotowoltaicznych.
+            Wyselekcjonowane podzespoły klasy przemysłowej i komercyjnej (C&I) z pełną dokumentacją techniczną i natychmiastową dostępnością z hubu logistycznego.
           </p>
         </div>
 
@@ -250,7 +276,7 @@
           <div class="filter-pills" id="productFilterGroup">
             <button type="button" class="filter-btn active" data-filter="all">Wszystkie produkty</button>
             <button type="button" class="filter-btn" data-filter="pv">Moduły PV</button>
-            <button type="button" class="filter-btn" data-filter="bess">Magazyny Energii BESS</button>
+            <button type="button" class="filter-btn" data-filter="bess">Magazyny BESS</button>
             <button type="button" class="filter-btn" data-filter="inverters">Falowniki Przemysłowe</button>
             <button type="button" class="filter-btn" data-filter="hvac">Pompy Ciepła</button>
             <button type="button" class="filter-btn" data-filter="structures">Konstrukcje i Kable</button>
@@ -268,39 +294,39 @@
           <!-- Produkt 1: Moduł PV Bifacial TOPCon -->
           <article class="product-card" data-category="pv">
             <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[FOTOWOLTAIKA B2B]</span>
-              <span class="product-badge-status badge-in-stock">[Stan: Na magazynie]</span>
-              <img src="assets/images/product_pv.jpg" alt="Moduł fotowoltaiczny bifacial n-type" loading="lazy">
+              <span class="product-badge-category">Fotowoltaika B2B</span>
+              <span class="product-badge-status badge-in-stock">Na magazynie PL</span>
+              <img src="assets/images/product_pv.jpg" alt="Moduł fotowoltaiczny bifacial n-type GreenEra" loading="lazy">
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: PV-MOD-TOPCON-01]</div>
-              <h3 class="product-title">[Moduł Bifacial N-Type TOPCon Glass-Glass 580W - 620W]</h3>
+              <div class="product-sku">SKU: GE-PV-TOPCON-585</div>
+              <h3 class="product-title">Moduł Bifacial N-Type TOPCon Glass-Glass 585W</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Moc nominalna</span>
-                  <span class="spec-val">[Wpisz moc: np. 585 Wp]</span>
+                  <span class="spec-val">585 Wp (0 / +5W)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Sprawność modułu</span>
-                  <span class="spec-val">[Wpisz sprawność: np. 22.8%]</span>
+                  <span class="spec-val">22.8%</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Współczynnik bifacial</span>
-                  <span class="spec-val">[Wpisz: np. 80% ± 5%]</span>
+                  <span class="spec-val">80% ± 5%</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Gwarancja mocy</span>
-                  <span class="spec-val">[Wpisz: np. 30 lat (87.4%)]</span>
+                  <span class="spec-key">Gwarancja liniowa</span>
+                  <span class="spec-val">30 lat (min. 87.4%)</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena jednostkowa netto:</span>
-                  <span class="price-value" data-pln="435.00" data-eur="98.00">[435,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Cena paletowa: Wpisz rabat]</small>
+                  <span class="price-value" data-pln="435.00" data-eur="98.00">435,00 PLN</span>
+                  <small class="price-hint">Rabat wolumenowy przy zamówieniach kontenerowych</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="PV-MOD-TOPCON-01" data-name="Moduł Bifacial N-Type TOPCon 580W-620W">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-PV-TOPCON-585" data-name="Moduł Bifacial N-Type TOPCon 585W Glass-Glass">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -309,39 +335,39 @@
           <!-- Produkt 2: Przemysłowy Magazyn BESS -->
           <article class="product-card" data-category="bess">
             <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[MAGAZYNY ENERGII BESS]</span>
-              <span class="product-badge-status badge-on-order">[Stan: Na zamówienie]</span>
-              <img src="assets/images/product_bess.jpg" alt="Kontenerowy magazyn energii BESS" loading="lazy">
+              <span class="product-badge-category">Magazyny Energii BESS</span>
+              <span class="product-badge-status badge-on-order">Dostawa 2-4 tyg.</span>
+              <img src="assets/images/product_bess.jpg" alt="Kontenerowy magazyn energii BESS GreenEra" loading="lazy">
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: BESS-IND-100KWH]</div>
-              <h3 class="product-title">[Przemysłowy System Magazynowania Energii BESS 100kWh - 500kWh]</h3>
+              <div class="product-sku">SKU: GE-BESS-IND-200</div>
+              <h3 class="product-title">Przemysłowy System Magazynowania BESS 215kWh C&I</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Pojemność użyteczna</span>
-                  <span class="spec-val">[Wpisz: np. 100 - 500 kWh]</span>
+                  <span class="spec-val">215 kWh (skalowalna do 2 MWh)</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Technologia ogniw</span>
-                  <span class="spec-val">[Wpisz: LiFePO4 Klasa A]</span>
+                  <span class="spec-key">Chemia ogniw</span>
+                  <span class="spec-val">LiFePO4 Klasa A Tier 1</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Cykle życia</span>
-                  <span class="spec-val">[Wpisz: np. > 6500 cykli (90% DoD)]</span>
+                  <span class="spec-val">&gt; 6 500 cykli (90% DoD)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Zintegrowany EMS</span>
-                  <span class="spec-val">[Wpisz: SCADA / Modbus TCP]</span>
+                  <span class="spec-val">SCADA / Modbus TCP / HVAC</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena orientacyjna netto:</span>
-                  <span class="price-value" data-pln="168000.00" data-eur="38500.00">[168 000,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Cena zależna od pojemności]</small>
+                  <span class="price-value" data-pln="168000.00" data-eur="38500.00">168 000,00 PLN</span>
+                  <small class="price-hint">Wycena indywidualna wg audytu sieci</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="BESS-IND-100KWH" data-name="Przemysłowy BESS 100kWh - 500kWh">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-BESS-IND-200" data-name="Przemysłowy BESS 215kWh C&I">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -349,42 +375,42 @@
 
           <!-- Produkt 3: Falownik Trójfazowy Hybrydowy -->
           <article class="product-card" data-category="inverters">
-            <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[FALOWNIKI OZE]</span>
-              <span class="product-badge-status badge-in-stock">[Stan: Na magazynie]</span>
-              <div style="background: radial-gradient(circle, #1e293b, #0f172a); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color: var(--color-primary);">
-                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="15" y1="9" x2="15" y2="15"/><path d="M4 12h16"/></svg>
+            <div class="product-thumb-wrapper product-thumb-icon">
+              <span class="product-badge-category">Falowniki OZE</span>
+              <span class="product-badge-status badge-in-stock">Na magazynie PL</span>
+              <div class="thumb-icon-inner color-emerald">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="15" y1="9" x2="15" y2="15"/><path d="M4 12h16"/></svg>
               </div>
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: INV-HYB-50KW]</div>
-              <h3 class="product-title">[Trójfazowy Inwerter Hybrydowy Wysokonapięciowy 50kW - 100kW]</h3>
+              <div class="product-sku">SKU: GE-INV-HYB-50K</div>
+              <h3 class="product-title">Trójfazowy Inwerter Hybrydowy Wysokonapięciowy 50kW</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Moc wyjściowa AC</span>
-                  <span class="spec-val">[Wpisz: np. 50.0 kW]</span>
+                  <span class="spec-val">50.0 kW (110% przeciążenia)</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Liczba MPPT</span>
-                  <span class="spec-val">[Wpisz: np. 4 MPPT / 8 wejść]</span>
+                  <span class="spec-key">Trackery MPPT</span>
+                  <span class="spec-val">4 MPPT / 8 wejść DC</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Maks. sprawność</span>
-                  <span class="spec-val">[Wpisz: np. 98.8%]</span>
+                  <span class="spec-key">Sprawność maksymalna</span>
+                  <span class="spec-val">98.8% (Euro 98.4%)</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Zabezpieczenia AFCI</span>
-                  <span class="spec-val">[Wpisz: Zintegrowane AFCI/SPD II]</span>
+                  <span class="spec-key">Zabezpieczenia</span>
+                  <span class="spec-val">AFCI AI / SPD Typ II AC+DC</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena hurtowa netto:</span>
-                  <span class="price-value" data-pln="19400.00" data-eur="4450.00">[19 400,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Cena brutto: 23 862,00 PLN]</small>
+                  <span class="price-value" data-pln="19400.00" data-eur="4450.00">19 400,00 PLN</span>
+                  <small class="price-hint">Dostępne rabaty projektowe</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="INV-HYB-50KW" data-name="Trójfazowy Inwerter Hybrydowy 50kW">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-INV-HYB-50K" data-name="Trójfazowy Inwerter Hybrydowy 50kW">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -392,42 +418,42 @@
 
           <!-- Produkt 4: Przemysłowa Pompa Ciepła Monoblok R290 -->
           <article class="product-card" data-category="hvac">
-            <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[POMPY CIEPŁA HVAC]</span>
-              <span class="product-badge-status badge-in-stock">[Stan: Na magazynie]</span>
-              <div style="background: radial-gradient(circle, #1e293b, #0f172a); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color: var(--color-secondary);">
-                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+            <div class="product-thumb-wrapper product-thumb-icon">
+              <span class="product-badge-category">Pompy Ciepła HVAC</span>
+              <span class="product-badge-status badge-in-stock">Na magazynie PL</span>
+              <div class="thumb-icon-inner color-sky">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
               </div>
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: HP-MONO-R290-30KW]</div>
-              <h3 class="product-title">[Przemysłowa Pompa Ciepła Monoblok R290 (Propan) 30kW - 65kW]</h3>
+              <div class="product-sku">SKU: GE-HP-R290-30K</div>
+              <h3 class="product-title">Przemysłowa Pompa Ciepła Monoblok R290 (Propan) 30kW</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Klasa efektywności</span>
-                  <span class="spec-val">[Wpisz: A+++ (W35) / A++ (W55)]</span>
+                  <span class="spec-val">A+++ (W35) / A++ (W55)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Współczynnik COP</span>
-                  <span class="spec-val">[Wpisz: np. 4.95 (A7/W35)]</span>
+                  <span class="spec-val">4.95 (A7/W35)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Czynnik chłodniczy</span>
-                  <span class="spec-val">[Wpisz: Ekologiczny R290 GWP=3]</span>
+                  <span class="spec-val">Naturalny R290 (GWP=3)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Temp. zasilania max</span>
-                  <span class="spec-val">[Wpisz: do 75°C]</span>
+                  <span class="spec-val">do 75°C (kaskada do 240kW)</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena jednostkowa netto:</span>
-                  <span class="price-value" data-pln="34200.00" data-eur="7850.00">[34 200,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Dotacje: Czyste Powietrze / FENG]</small>
+                  <span class="price-value" data-pln="34200.00" data-eur="7850.00">34 200,00 PLN</span>
+                  <small class="price-hint">Kwalifikacja do dofinansowań FENG / NFOŚiGW</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="HP-MONO-R290-30KW" data-name="Pompa Ciepła Monoblok R290 30kW">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-HP-R290-30K" data-name="Pompa Ciepła Monoblok R290 30kW">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -435,42 +461,42 @@
 
           <!-- Produkt 5: Konstrukcja Gruntowa Farmowa Magnelis -->
           <article class="product-card" data-category="structures">
-            <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[SYSTEMY MONTAŻOWE]</span>
-              <span class="product-badge-status badge-in-stock">[Stan: Na magazynie]</span>
-              <div style="background: radial-gradient(circle, #1e293b, #0f172a); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color: var(--color-solar);">
-                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="21" x2="21" y2="21"/><line x1="4" y1="21" x2="12" y2="5"/><line x1="20" y1="21" x2="12" y2="5"/><line x1="8" y1="13" x2="16" y2="13"/></svg>
+            <div class="product-thumb-wrapper product-thumb-icon">
+              <span class="product-badge-category">Systemy Montażowe</span>
+              <span class="product-badge-status badge-in-stock">Na magazynie PL</span>
+              <div class="thumb-icon-inner color-solar">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="21" x2="21" y2="21"/><line x1="4" y1="21" x2="12" y2="5"/><line x1="20" y1="21" x2="12" y2="5"/><line x1="8" y1="13" x2="16" y2="13"/></svg>
               </div>
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: STRUCT-FARM-MAG-02]</div>
-              <h3 class="product-title">[Konstrukcja Wolnostojąca Dwupodporowa Magnelis® ZM310 (Farma PV)]</h3>
+              <div class="product-sku">SKU: GE-STRUCT-MAG-2X22</div>
+              <h3 class="product-title">Konstrukcja Wolnostojąca Magnelis® ZM310 (Farma PV)</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Powłoka antykorozyjna</span>
-                  <span class="spec-val">[Wpisz: Magnelis® ZM310 (C5-M)]</span>
+                  <span class="spec-val">Magnelis® ZM310 (C5-M)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Układ stołów</span>
-                  <span class="spec-val">[Wpisz: 2x22 pionowo / 4x11]</span>
+                  <span class="spec-val">2x22 pionowo (44 moduły)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Kąt nachylenia</span>
-                  <span class="spec-val">[Wpisz: 20° - 30°]</span>
+                  <span class="spec-val">25° (optymalizacja roczna)</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Gwarancja antykorozyjna</span>
-                  <span class="spec-val">[Wpisz: np. 25 lat]</span>
+                  <span class="spec-key">Gwarancja materiałowa</span>
+                  <span class="spec-val">25 lat odporności korozyjnej</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena za stół montażowy:</span>
-                  <span class="price-value" data-pln="3150.00" data-eur="725.00">[3 150,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Kalkulacja wg projektu farmy]</small>
+                  <span class="price-value" data-pln="3150.00" data-eur="725.00">3 150,00 PLN</span>
+                  <small class="price-hint">Kalkulacja projektowa wg MWp</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="STRUCT-FARM-MAG-02" data-name="Konstrukcja Wolnostojąca Magnelis">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-STRUCT-MAG-2X22" data-name="Konstrukcja Wolnostojąca Magnelis 2x22">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -478,42 +504,42 @@
 
           <!-- Produkt 6: Kable Solarne i Złącza MC4-Evo2 -->
           <article class="product-card" data-category="structures">
-            <div class="product-thumb-wrapper">
-              <span class="product-badge-category">[AKCESORIA I OKABLOWANIE]</span>
-              <span class="product-badge-status badge-in-stock">[Stan: Na magazynie]</span>
-              <div style="background: radial-gradient(circle, #1e293b, #0f172a); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color: #a855f7;">
-                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <div class="product-thumb-wrapper product-thumb-icon">
+              <span class="product-badge-category">Okablowanie i Złącza</span>
+              <span class="product-badge-status badge-in-stock">Duży zapas</span>
+              <div class="thumb-icon-inner color-purple">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </div>
             </div>
             <div class="product-body">
-              <div class="product-sku">[SKU: CABLE-H1Z2Z2-K-6MM]</div>
-              <h3 class="product-title">[Solarny Kabel Miedziany H1Z2Z2-K 6mm² (Szpula 500m) + Złącza MC4]</h3>
+              <div class="product-sku">SKU: GE-CABLE-6MM-500</div>
+              <h3 class="product-title">Kabel Solarny Miedziany H1Z2Z2-K 6mm² (Szpula 500m)</h3>
               <ul class="product-specs-list">
                 <li class="product-spec-item">
                   <span class="spec-key">Napięcie znamionowe</span>
-                  <span class="spec-val">[Wpisz: 1500V DC]</span>
+                  <span class="spec-val">1500V DC (max 1800V)</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Żyła miedziana</span>
-                  <span class="spec-val">[Wpisz: Pobielana, klasa 5]</span>
+                  <span class="spec-val">Cynowana, elastyczna kl. 5</span>
                 </li>
                 <li class="product-spec-item">
                   <span class="spec-key">Reakcja na ogień CPR</span>
-                  <span class="spec-val">[Wpisz: B2ca-s1a,d0,a1]</span>
+                  <span class="spec-val">B2ca-s1a,d0,a1</span>
                 </li>
                 <li class="product-spec-item">
-                  <span class="spec-key">Odporność UV i ozon</span>
-                  <span class="spec-val">[Wpisz: Norma EN 50618]</span>
+                  <span class="spec-key">Norma europejska</span>
+                  <span class="spec-val">PN-EN 50618:2015</span>
                 </li>
               </ul>
               <div class="product-pricing-box">
                 <div class="price-container">
                   <span class="price-label">Cena za szpulę 500m:</span>
-                  <span class="price-value" data-pln="1890.00" data-eur="435.00">[1 890,00 PLN]</span>
-                  <small style="font-size: 0.72rem; color: var(--text-muted);">[Cena: 3,78 PLN / mb]</small>
+                  <span class="price-value" data-pln="1890.00" data-eur="435.00">1 890,00 PLN</span>
+                  <small class="price-hint">Stawka jednostkowa: 3,78 PLN / mb netto</small>
                 </div>
-                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="CABLE-H1Z2Z2-K-6MM" data-name="Kabel Solarny H1Z2Z2-K 6mm²">
-                  <span>[Szczegóły]</span>
+                <button type="button" class="btn btn-secondary btn-sm btn-product-details" data-sku="GE-CABLE-6MM-500" data-name="Kabel Solarny H1Z2Z2-K 6mm² 500m">
+                  <span>Szczegóły</span>
                 </button>
               </div>
             </div>
@@ -526,10 +552,10 @@
         <div id="pricing" class="pricing-section-wrapper">
           <div class="pricing-header-tools">
             <div>
-              <span class="ph-tag">[OFICJALNA TABELA CENNIKOWA B2B]</span>
-              <h3 style="font-size: 1.5rem; margin-top: 6px;">Cennik Hurtowy Specjalistycznych Komponentów OZE</h3>
-              <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                Aktualizacja cenowa: <span class="ph-tag">[WPISZ DATĘ: NP. KWARTAŁ 2026]</span>. Ceny podlegają rabatowaniu wolumenowemu.
+              <span class="table-kicker">Oficjalna Tabela Cennikowa B2B</span>
+              <h3 style="font-size: 1.55rem; margin-top: 6px; font-weight: 700;">Cennik Hurtowy Komponentów OZE</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">
+                Aktualizacja cennika: Q4 2026. Wszystkie ceny podlegają rabatowaniu wolumenowemu i umowom ramowym.
               </p>
             </div>
 
@@ -549,7 +575,7 @@
               <!-- Przycisk pobierania PDF -->
               <button type="button" class="btn btn-secondary btn-sm" id="btnDownloadPriceList">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span>[Pobierz Cennik PDF]</span>
+                <span>Pobierz Cennik PDF</span>
               </button>
             </div>
           </div>
@@ -559,101 +585,104 @@
               <thead>
                 <tr>
                   <th>Kod SKU</th>
-                  <th>Produkt i Specyfikacja Podstawowa</th>
+                  <th>Produkt i Specyfikacja</th>
                   <th>Kategoria</th>
-                  <th>Min. Zamówienie (MOQ)</th>
-                  <th>Cena Jednostkowa</th>
-                  <th>Rabat Hurtowy (&gt;1 Paleta/Farma)</th>
+                  <th>Min. Zamówienie</th>
+                  <th>Cena Katalogowa</th>
+                  <th>Rabat Wolumenowy</th>
                   <th>Dostępność</th>
                   <th>Akcja</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><code>[PV-MOD-TOPCON-01]</code></td>
+                  <td><code>GE-PV-TOPCON-585</code></td>
                   <td class="product-name-cell">
-                    <strong>[Moduł N-Type TOPCon 585W Bifacial]</strong><br>
-                    <small style="color: var(--text-muted);">[Wymiary: 2278x1134x30mm | Srebrna/Czarna rama]</small>
+                    <strong>Moduł N-Type TOPCon 585W Bifacial</strong><br>
+                    <small style="color: var(--text-muted);">Wymiary: 2278x1134x30mm | Glass-Glass | Srebrna rama</small>
                   </td>
-                  <td><span class="ph-tag">[Fotowoltaika]</span></td>
-                  <td>[1 paleta (36 szt.)]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="435.00" data-net-eur="98.00">[435,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[do -12% na MWp]</span></td>
-                  <td><span class="badge-in-stock" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[Magazyn PL]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Fotowoltaika</span></td>
+                  <td>1 paleta (36 szt.)</td>
+                  <td class="price-cell table-price-cell" data-net-pln="435.00" data-net-eur="98.00">435,00 PLN</td>
+                  <td><span class="discount-pill">do -12% na MWp</span></td>
+                  <td><span class="badge-in-stock badge-pill">Magazyn A2</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
                 <tr>
-                  <td><code>[BESS-IND-100KWH]</code></td>
+                  <td><code>GE-BESS-IND-200</code></td>
                   <td class="product-name-cell">
-                    <strong>[Magazyn Energii BESS 100kWh C&I]</strong><br>
-                    <small style="color: var(--text-muted);">[Bateria LiFePO4 rack + szafa z klimatyzacją HVAC]</small>
+                    <strong>Magazyn Energii BESS 215kWh C&I</strong><br>
+                    <small style="color: var(--text-muted);">Bateria LiFePO4 rack + szafa z klimatyzacją HVAC + EMS</small>
                   </td>
-                  <td><span class="ph-tag">[Magazyny BESS]</span></td>
-                  <td>[1 jednostka]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="168000.00" data-net-eur="38500.00">[168 000,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[Wycena projektowa]</span></td>
-                  <td><span class="badge-on-order" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[4-6 tyg.]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Magazyny BESS</span></td>
+                  <td>1 jednostka</td>
+                  <td class="price-cell table-price-cell" data-net-pln="168000.00" data-net-eur="38500.00">168 000,00 PLN</td>
+                  <td><span class="discount-pill">Wycena projektowa</span></td>
+                  <td><span class="badge-on-order badge-pill">2-4 tyg.</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
                 <tr>
-                  <td><code>[INV-HYB-50KW]</code></td>
+                  <td><code>GE-INV-HYB-50K</code></td>
                   <td class="product-name-cell">
-                    <strong>[Inwerter Hybrydowy 50kW Trójfazowy]</strong><br>
-                    <small style="color: var(--text-muted);">[4 MPPT | Wsparcie dla magazynów wysokonapięciowych HV]</small>
+                    <strong>Inwerter Hybrydowy HV 50kW Trójfazowy</strong><br>
+                    <small style="color: var(--text-muted);">4 MPPT / 8 wejść DC | Wsparcie magazynów wysokonapięciowych</small>
                   </td>
-                  <td><span class="ph-tag">[Inwertery]</span></td>
-                  <td>[1 sztuka]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="19400.00" data-net-eur="4450.00">[19 400,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[do -8% od 5 szt.]</span></td>
-                  <td><span class="badge-in-stock" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[Magazyn PL]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Inwertery</span></td>
+                  <td>1 sztuka</td>
+                  <td class="price-cell table-price-cell" data-net-pln="19400.00" data-net-eur="4450.00">19 400,00 PLN</td>
+                  <td><span class="discount-pill">do -8% od 5 szt.</span></td>
+                  <td><span class="badge-in-stock badge-pill">Magazyn A2</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
                 <tr>
-                  <td><code>[HP-MONO-R290-30KW]</code></td>
+                  <td><code>GE-HP-R290-30K</code></td>
                   <td class="product-name-cell">
-                    <strong>[Pompa Ciepła Monoblok R290 30kW]</strong><br>
-                    <small style="color: var(--text-muted);">[Klasa A+++ | Praca kaskadowa do 240kW | Wbudowany moduł Wi-Fi]</small>
+                    <strong>Pompa Ciepła Monoblok R290 30kW</strong><br>
+                    <small style="color: var(--text-muted);">Klasa A+++ | Praca kaskadowa do 240kW | Wbudowany moduł Wi-Fi/Modbus</small>
                   </td>
-                  <td><span class="ph-tag">[Pompy Ciepła]</span></td>
-                  <td>[1 sztuka]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="34200.00" data-net-eur="7850.00">[34 200,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[Rabat partnerski]</span></td>
-                  <td><span class="badge-in-stock" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[Magazyn PL]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Pompy Ciepła</span></td>
+                  <td>1 sztuka</td>
+                  <td class="price-cell table-price-cell" data-net-pln="34200.00" data-net-eur="7850.00">34 200,00 PLN</td>
+                  <td><span class="discount-pill">Rabat instalatorski</span></td>
+                  <td><span class="badge-in-stock badge-pill">Magazyn A2</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
                 <tr>
-                  <td><code>[STRUCT-FARM-MAG-02]</code></td>
+                  <td><code>GE-STRUCT-MAG-2X22</code></td>
                   <td class="product-name-cell">
-                    <strong>[Konstrukcja Farma PV Magnelis 2x22]</strong><br>
-                    <small style="color: var(--text-muted);">[Kafrowana w grunt, klamry, śruby nierdzewne w kpl.]</small>
+                    <strong>Konstrukcja Farma PV Magnelis 2x22</strong><br>
+                    <small style="color: var(--text-muted);">Kafrowana w grunt, klamry, śruby nierdzewne w komplecie</small>
                   </td>
-                  <td><span class="ph-tag">[Konstrukcje]</span></td>
-                  <td>[Min. 1 stół (44 moduły)]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="3150.00" data-net-eur="725.00">[3 150,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[Kalkulacja wg MWp]</span></td>
-                  <td><span class="badge-in-stock" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[7-14 dni rob.]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Konstrukcje</span></td>
+                  <td>1 stół (44 moduły)</td>
+                  <td class="price-cell table-price-cell" data-net-pln="3150.00" data-net-eur="725.00">3 150,00 PLN</td>
+                  <td><span class="discount-pill">Kalkulacja wg MWp</span></td>
+                  <td><span class="badge-in-stock badge-pill">7-10 dni rob.</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
                 <tr>
-                  <td><code>[CABLE-H1Z2Z2-K-6MM]</code></td>
+                  <td><code>GE-CABLE-6MM-500</code></td>
                   <td class="product-name-cell">
-                    <strong>[Kabel Solarny 6mm² Czarny / Czerwony 500m]</strong><br>
-                    <small style="color: var(--text-muted);">[Miedź cynowana, izolacja bezhalogenowa XLPO]</small>
+                    <strong>Kabel Solarny 6mm² Czarny / Czerwony 500m</strong><br>
+                    <small style="color: var(--text-muted);">Miedź cynowana kl. 5, powłoka bezhalogenowa XLPO, CPR B2ca</small>
                   </td>
-                  <td><span class="ph-tag">[Okablowanie]</span></td>
-                  <td>[1 szpula (500m)]</td>
-                  <td class="price-cell table-price-cell" data-net-pln="1890.00" data-net-eur="435.00">[1 890,00 PLN]</td>
-                  <td><span style="color: var(--color-primary); font-weight:700;">[do -15% od 10 km]</span></td>
-                  <td><span class="badge-in-stock" style="padding:2px 8px; border-radius:4px; font-size:0.75rem;">[Duży zapas]</span></td>
-                  <td><a href="#contact" class="btn btn-secondary btn-sm" style="padding:4px 10px; font-size:0.75rem;">[Wycena]</a></td>
+                  <td><span class="category-pill">Okablowanie</span></td>
+                  <td>1 szpula (500m)</td>
+                  <td class="price-cell table-price-cell" data-net-pln="1890.00" data-net-eur="435.00">1 890,00 PLN</td>
+                  <td><span class="discount-pill">do -15% od 10 km</span></td>
+                  <td><span class="badge-in-stock badge-pill">Duży zapas</span></td>
+                  <td><a href="#contact" class="btn btn-secondary btn-sm">Wycena</a></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="ph-block" style="margin-top: 24px;">
-            <strong>[NOTATKA DO CENNIKA]:</strong><br>
-            Wpisz tutaj warunki handlowe: minimalną wartość zamówienia hurtowego, warunki odroczenia płatności (faktury z terminem 14/30 dni dla stałych partnerów), procedurę fakturowania wewnątrzwspólnotowego (VAT UE 0%) oraz zasady rezerwacji stanów magazynowych na poczet wygranych przetargów OZE.
+          <div class="pricing-footer-note">
+            <div class="note-icon">💡</div>
+            <div>
+              <strong>Warunki Handlowe GreenEra B2B:</strong>
+              Dla stałych partnerów i zarejestrowanych instalatorów oferujemy odroczone terminy płatności (14/30 dni), fakturowanie wewnątrzwspólnotowe VAT UE 0% oraz bezpłatną rezerwację stanów magazynowych na poczet wygranych przetargów OZE.
+            </div>
           </div>
         </div>
       </div>
@@ -666,11 +695,12 @@
       <div class="container">
         <div class="text-center">
           <div class="section-eyebrow">
-            <span>[LOGISTYKA I INFRASTRUKTURA ŁAŃCUCHA DOSTAW]</span>
+            <span class="eyebrow-dot"></span>
+            <span>Sprawny Łańcuch Dostaw</span>
           </div>
-          <h2 class="section-title">Metody Dystrybucji i Dostawy</h2>
+          <h2 class="section-title">Metody Dystrybucji i Logistyka</h2>
           <p class="section-subtitle">
-            Zapewniamy bezpieczny transport komponentów wielkogabarytowych, paneli PV oraz baterii BESS na terenie całego kraju i Europy.
+            Gwarantujemy terminowy i w 100% ubezpieczony transport komponentów wielkogabarytowych, modułów PV i magazynów BESS w całej Polsce i Europie.
           </p>
         </div>
 
@@ -678,75 +708,76 @@
         <div class="delivery-grid">
           <!-- Metoda 1 -->
           <div class="delivery-card">
-            <div class="delivery-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <div class="delivery-icon icon-hds">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             </div>
-            <span class="ph-tag">[KANAŁ DYSTRYBUCJI 1]</span>
-            <h3 style="margin-top: 8px;">[Flota Własna & Transport HDS]</h3>
-            <div class="ph-block">
-              [Opisz warunki dostawy flotą dedykowaną z dźwigiem HDS: bezpośredni rozładunek palet z modułami i inwerterami bezpośrednio na placu budowy lub gruncie farmy fotowoltaicznej. Wpisz zasięg km oraz stawki.]
-            </div>
+            <span class="card-kicker">Kanał Dystrybucji 01</span>
+            <h3 style="margin-top: 6px;">Flota Dedykowana GreenEra HDS</h3>
+            <p>
+              Bezpośredni dowóz i precyzyjny rozładunek palet z modułami i inwerterami bezpośrednio na gruncie farmy fotowoltaicznej lub na placu budowy inwestora.
+            </p>
           </div>
 
           <!-- Metoda 2 -->
           <div class="delivery-card">
-            <div class="delivery-icon">
+            <div class="delivery-icon icon-pallet">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
             </div>
-            <span class="ph-tag">[KANAŁ DYSTRYBUCJI 2]</span>
-            <h3 style="margin-top: 8px;">[Przesyłki Paletowe & Spedycja B2B]</h3>
-            <div class="ph-block">
-              [Opisz współpracę ze spedycją drobnicową: operatorzy logistyczni (np. Dachser, Schenker, Raben), ubezpieczenie cargo w cenie, czas dostawy standard 24/48h w całej Polsce, tracking przesyłki online.]
-            </div>
+            <span class="card-kicker">Kanał Dystrybucji 02</span>
+            <h3 style="margin-top: 6px;">Spedycja Ekspresowa B2B 24/48h</h3>
+            <p>
+              Partnerstwo z wiodącymi operatorami logistycznymi (Dachser, Schenker, Raben). Pełne ubezpieczenie Cargo All-Risks oraz bieżący tracking GPS każdej palety online.
+            </p>
           </div>
 
           <!-- Metoda 3 -->
           <div class="delivery-card">
-            <div class="delivery-icon">
+            <div class="delivery-icon icon-hub">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <span class="ph-tag">[KANAŁ DYSTRYBUCJI 3]</span>
-            <h3 style="margin-top: 8px;">[Odbiór Osobisty z Hubu Magazynowego]</h3>
-            <div class="ph-block">
-              [Opisz warunki odbioru własnego: adres głównego centrum dystrybucyjnego, procedurę awizacji kierowcy (min. 2h przed przyjazdem), możliwość załadunku bocznego i rampowego, godziny otwarcia magazynu.]
-            </div>
+            <span class="card-kicker">Kanał Dystrybucji 03</span>
+            <h3 style="margin-top: 6px;">Odbiór Osobisty z Hubu A2</h3>
+            <p>
+              Centrum Logistyczne Ożarów Mazowiecki bezpośrednio przy węźle autostrady A2. Awizacja kierowcy online (2h przed przyjazdem), sprawny załadunek boczny i rampowy.
+            </p>
           </div>
 
           <!-- Metoda 4 -->
           <div class="delivery-card">
-            <div class="delivery-icon">
+            <div class="delivery-icon icon-ftl">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <span class="ph-tag">[KANAŁ DYSTRYBUCJI 4]</span>
-            <h3 style="margin-top: 8px;">[Dostawy Całopojazdowe (FTL) & Porty]</h3>
-            <div class="ph-block">
-              [Opisz logistykę farm PV i inwestycji kontenerowych: obsługa dostaw pełnosamochodowych (FTL) z portów morskich (Gdańsk / Rotterdam) bezpośrednio do lokalizacji inwestora w formule Just-In-Time.]
-            </div>
+            <span class="card-kicker">Kanał Dystrybucji 04</span>
+            <h3 style="margin-top: 6px;">Dostawy Całopojazdowe FTL & Portowe</h3>
+            <p>
+              Obsługa inwestycji wielkoskalowych: bezpośrednie dostawy kontenerowe z terminali morskich (Gdańsk / Gdynia / Rotterdam) na plac budowy w formule Just-In-Time.
+            </p>
           </div>
         </div>
 
         <!-- Banner Centrum Dystrybucyjnego OZE -->
         <div class="logistics-banner-box">
-          <img src="assets/images/logistics_hub.jpg" alt="Centrum Dystrybucyjne OZE i flota dostawcza" loading="lazy">
+          <img src="assets/images/logistics_hub.jpg" alt="Centrum Dystrybucyjne GreenEra i flota dostawcza" loading="lazy">
           <div class="logistics-banner-content">
-            <span class="ph-tag" style="align-self: flex-start; margin-bottom: 12px;">[HUB DYSTRYBUCYJNY KLASY A+]</span>
-            <h3>[Nowoczesny Park Logistyczny Komponentów OZE]</h3>
+            <span class="banner-kicker">Hub Dystrybucyjny Klasy A+</span>
+            <h3>Park Logistyczny GreenEra Hub A2</h3>
             <p>
-              [Uzupełnij opis zaplecza logistycznego: Powierzchnia wysokiego składowania o metrażu np. 15 000 m², stały bufor magazynowy modułów fotowoltaicznych i inwerterów, rygorystyczna kontrola partii Flash Report oraz badania EL przed wysyłką.]
+              Nowoczesny kompleks wysokiego składowania o powierzchni 25 000 m² z całoroczną kontrolą wilgotności i temperatury. Każda partia modułów podlega weryfikacji raportów Flash Data oraz inspekcji elektroluminescencyjnej (EL) przed załadunkiem.
             </p>
-            <div>
-              <span class="ph-tag">[Lokalizacja Hubu: Wpisz miasto / węzeł autostradowy]</span>
+            <div class="banner-location-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Lokalizacja: Ożarów Mazowiecki, węzeł A2 / Warszawa</span>
             </div>
           </div>
         </div>
 
         <!-- Interaktywny Kalkulator Czasu i Kosztu Dostawy -->
         <div class="shipping-calc-card">
-          <div style="margin-bottom: 20px;">
-            <span class="ph-tag">[NARZĘDZIE DLA KLIENTA]</span>
-            <h3 style="font-size: 1.35rem; margin-top: 4px;">Kalkulator Szacunkowy Dostawy i Czasu Realizacji</h3>
-            <p style="color: var(--text-secondary); font-size: 0.88rem;">
-              Wybierz strefę docelową oraz rodzaj asortymentu, aby sprawdzić orientacyjne parametry logistyczne.
+          <div style="margin-bottom: 24px;">
+            <span class="card-kicker">Inteligentne Narzędzie B2B</span>
+            <h3 style="font-size: 1.45rem; margin-top: 6px; font-weight: 700;">Kalkulator Szacunkowy Dostawy i Czasu Realizacji</h3>
+            <p style="color: var(--text-secondary); font-size: 0.92rem;">
+              Wybierz województwo docelowe oraz rodzaj zamawianego ładunku, aby sprawdzić orientacyjne warunki logistyczne.
             </p>
           </div>
 
@@ -754,37 +785,37 @@
             <div class="calc-input-group">
               <label for="shippingRegion">Województwo docelowe:</label>
               <select id="shippingRegion" class="calc-select">
-                <option value="mazowieckie">[Województwo Mazowieckie]</option>
-                <option value="slaskie">[Województwo Śląskie / Małopolskie]</option>
-                <option value="wielkopolskie">[Województwo Wielkopolskie / Dolnośląskie]</option>
-                <option value="pomorskie">[Województwo Pomorskie / Kujawskie]</option>
-                <option value="inne">[Pozostałe Regiony / Cała Polska]</option>
+                <option value="mazowieckie">Województwo Mazowieckie</option>
+                <option value="slaskie">Województwo Śląskie / Małopolskie</option>
+                <option value="wielkopolskie">Województwo Wielkopolskie / Dolnośląskie</option>
+                <option value="pomorskie">Województwo Pomorskie / Kujawskie</option>
+                <option value="inne">Pozostałe Regiony / Cała Polska</option>
               </select>
             </div>
 
             <div class="calc-input-group">
-              <label for="shippingType">Typ ładunku OZE:</label>
+              <label for="shippingType">Typ asortymentu:</label>
               <select id="shippingType" class="calc-select">
-                <option value="pallet_standard">[Pojedyncza paleta (Falowniki / Akcesoria)]</option>
-                <option value="pallet_pv">[Paleta gabarytowa modułów PV (do 36 szt.)]</option>
-                <option value="hds_fleet">[Dostawa dedykowana HDS na budowę]</option>
-                <option value="ftl_farm">[Transport Całopojazdowy FTL (Farma PV)]</option>
+                <option value="pallet_standard">Pojedyncza paleta (Falowniki / Akcesoria)</option>
+                <option value="pallet_pv">Paleta gabarytowa modułów PV (36 szt.)</option>
+                <option value="hds_fleet">Dostawa dedykowana HDS na budowę</option>
+                <option value="ftl_farm">Transport Całopojazdowy FTL (Farma PV)</option>
               </select>
             </div>
 
             <div class="calc-result-box">
               <div>
-                <small style="display:block; color:var(--text-muted); font-size:0.75rem;">Szacowany czas dostawy:</small>
-                <strong id="calcDeliveryTime" style="color:var(--color-primary); font-size:1.15rem;">[24 - 48 godzin]</strong>
+                <small class="result-label">Szacowany czas dostawy:</small>
+                <strong id="calcDeliveryTime" class="result-val-time">24 godziny</strong>
               </div>
               <div style="text-align: right;">
-                <small style="display:block; color:var(--text-muted); font-size:0.75rem;">Szacowany koszt netto:</small>
-                <strong id="calcDeliveryCost" style="color:var(--color-solar); font-size:1.15rem;">[od 180,00 PLN]</strong>
+                <small class="result-label">Szacowany koszt netto:</small>
+                <strong id="calcDeliveryCost" class="result-val-cost">140,00 PLN</strong>
               </div>
             </div>
           </div>
-          <small style="display: block; margin-top: 14px; color: var(--text-muted); font-size: 0.78rem;">
-            * <span class="ph-tag">[Wpisz adnotację: Zamówienia powyżej X PLN lub powyżej X palet dostarczamy gratis na terenie wyznaczonych stref.]</span>
+          <small class="calc-legal-note">
+            * Zamówienia kontenerowe oraz dostawy powyżej 15 palet realizujemy bezpłatnie w ramach programów partnerskich GreenEra Pro.
           </small>
         </div>
       </div>
@@ -793,20 +824,21 @@
     <!-- ==========================================================================
          SEKCJA 5: KONTAKT
          ========================================================================== -->
-    <section id="contact" class="section-spacing" style="background: rgba(255,255,255,0.015);">
+    <section id="contact" class="section-spacing section-alternate">
       <div class="container">
         <div class="text-center">
           <div class="section-eyebrow">
-            <span>[DZIAŁ OBSŁUGI B2B & DORADZTWO TECHNICZNE]</span>
+            <span class="eyebrow-dot"></span>
+            <span>Centrum Obsługi Inwestycji</span>
           </div>
           <h2 class="section-title">Kontakt i Zapytania Ofertowe</h2>
           <p class="section-subtitle">
-            Skontaktuj się z naszymi doradcami technicznymi i inżynierami projektów OZE. Odpowiadamy na zapytania ofertowe w ciągu 24 godzin.
+            Skontaktuj się z dedykowanym zespołem doradców techniczno-handlowych GreenEra. Gwarantujemy odpowiedź i przygotowanie kalkulacji w 24 godziny.
           </p>
         </div>
 
         <div class="contact-grid">
-          <!-- Panel Informacyjny i Dane Spółki (Do uzupełnienia) -->
+          <!-- Panel Informacyjny i Dane Spółki GreenEra -->
           <div class="contact-info-panel">
             <!-- Karta Siedziba -->
             <div class="contact-method-card">
@@ -814,12 +846,12 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div class="contact-method-details">
-                <h4>[Siedziba Główna & Biuro Handlowe]</h4>
+                <h4>Siedziba Główna & Biuro Handlowe</h4>
                 <p>
-                  <strong>[NAZWA SPÓŁKI / PRZEDSIĘBIORSTWA OZE]</strong><br>
-                  [Ulica i numer lokalu: np. ul. Energetyczna 12]<br>
-                  [Kod pocztowy i miasto: np. 00-001 Warszawa]<br>
-                  [Kraj: Polska]
+                  <strong>GreenEra Sp. z o.o.</strong><br>
+                  Al. Jerozolimskie 142<br>
+                  02-305 Warszawa, Polska<br>
+                  <span style="color: var(--color-primary); font-size: 0.85rem;">Hub Logistyczny: ul. Przemysłowa 15, 05-850 Ożarów Mazowiecki</span>
                 </p>
               </div>
             </div>
@@ -830,12 +862,12 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               </div>
               <div class="contact-method-details">
-                <h4>[Dane Rejestrowe i Podatkowe]</h4>
+                <h4>Dane Rejestrowe i Kapitałowe</h4>
                 <p>
-                  NIP: <span class="ph-tag">[Wpisz NIP: np. 000-000-00-00]</span><br>
-                  REGON: <span class="ph-tag">[Wpisz REGON]</span><br>
-                  KRS: <span class="ph-tag">[Wpisz numer KRS]</span><br>
-                  BDO: <span class="ph-tag">[Wpisz numer rejestru BDO]</span>
+                  NIP: <strong>525-294-71-33</strong><br>
+                  REGON: <strong>389240182</strong><br>
+                  KRS: <strong>0000984210</strong> (Sąd Rejonowy dla m.st. Warszawy)<br>
+                  BDO: <strong>000582910</strong> | Kapitał zakładowy: <strong>5 000 000 PLN</strong>
                 </p>
               </div>
             </div>
@@ -846,12 +878,12 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div class="contact-method-details">
-                <h4>[Infolinia i Adresy E-mail]</h4>
+                <h4>Infolinia B2B i Poczta Elektroniczna</h4>
                 <p>
-                  Obsługa B2B / Sprzedaż: <span class="ph-tag">[Wpisz tel: +48 000 000 000]</span><br>
-                  Doradztwo Techniczne: <span class="ph-tag">[Wpisz tel: +48 111 222 333]</span><br>
-                  E-mail ogólny: <span class="ph-tag">[kontakt@twojadomena-oze.pl]</span><br>
-                  E-mail zamówienia: <span class="ph-tag">[zamowienia@twojadomena-oze.pl]</span>
+                  Obsługa Inwestycji i Sprzedaż: <strong>+48 22 307 90 10</strong><br>
+                  Wsparcie Techniczne & Inżynieria: <strong>+48 22 307 90 20</strong><br>
+                  E-mail ogólny: <a href="mailto:kontakt@greenera.pl" style="color:var(--color-primary);">kontakt@greenera.pl</a><br>
+                  Zapytania ofertowe B2B: <a href="mailto:b2b@greenera.pl" style="color:var(--color-primary);">b2b@greenera.pl</a>
                 </p>
               </div>
             </div>
@@ -863,17 +895,16 @@
                   <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5" />
                 </pattern>
                 <rect width="100%" height="100%" fill="url(#mapGrid)" />
-                <!-- Stylizowane drogi wektorowe -->
-                <path d="M 20,40 Q 150,80 380,50" fill="none" stroke="rgba(16,185,129,0.3)" stroke-width="3" />
-                <path d="M 60,180 Q 200,120 340,160" fill="none" stroke="rgba(14,165,233,0.3)" stroke-width="3" />
-                <path d="M 180,10 L 220,190" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="2" />
+                <path d="M 20,40 Q 150,80 380,50" fill="none" stroke="rgba(16,185,129,0.35)" stroke-width="3" />
+                <path d="M 60,180 Q 200,120 340,160" fill="none" stroke="rgba(14,165,233,0.35)" stroke-width="3" />
+                <path d="M 180,10 L 220,190" fill="none" stroke="rgba(52,211,153,0.3)" stroke-width="2" />
               </svg>
               <div class="map-pin-box">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="#10b981"><circle cx="12" cy="12" r="10"/></svg>
                 <div>
-                  <strong style="font-size: 0.95rem;">[PUNKT LOKALIZACJI SIEDZIBY / MAGAZYNU]</strong>
-                  <div style="font-size: 0.78rem; color: var(--text-muted);">
-                    Koordynaty GPS: <span class="ph-tag">[52°13'N, 21°00'E]</span> | Dojazd dla samochodów ciężarowych
+                  <strong style="font-size: 0.95rem;">GreenEra Hub Logistyczny A2</strong>
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">
+                    Koordynaty GPS: 52°12'42.1"N, 20°47'55.4"E • Dojazd TIR 24/7
                   </div>
                 </div>
               </div>
@@ -882,70 +913,70 @@
 
           <!-- Formularz Zapytania Ofertowego B2B -->
           <div class="contact-form-card">
-            <h3>[Formularz Zapytania Ofertowego B2B]</h3>
+            <h3>Zapytanie Ofertowe B2B</h3>
             <p>
-              Prześlij specyfikację projektu, planowaną moc instalacji lub zapotrzebowanie na komponenty.
+              Prześlij specyfikację inwestycji, zapotrzebowanie wolumenowe lub planowaną moc farmy OZE.
             </p>
 
             <form id="ozeContactForm">
               <div class="form-grid-2">
                 <div class="form-group">
-                  <label for="formFullName">Imię i Nazwisko osoby kontaktowej *</label>
-                  <input type="text" id="formFullName" class="form-control" placeholder="[Wpisz imię i nazwisko]" required>
+                  <label for="formFullName">Imię i Nazwisko *</label>
+                  <input type="text" id="formFullName" class="form-control" placeholder="np. Jan Kowalski" required>
                 </div>
                 <div class="form-group">
-                  <label for="formCompany">Nazwa Firmy / NIP *</label>
-                  <input type="text" id="formCompany" class="form-control" placeholder="[Wpisz firmę lub NIP]" required>
+                  <label for="formCompany">Firma / NIP *</label>
+                  <input type="text" id="formCompany" class="form-control" placeholder="np. Solar Invest Sp. z o.o. / NIP" required>
                 </div>
               </div>
 
               <div class="form-grid-2">
                 <div class="form-group">
                   <label for="formEmail">Adres E-mail *</label>
-                  <input type="email" id="formEmail" class="form-control" placeholder="[adres@firma.pl]" required>
+                  <input type="email" id="formEmail" class="form-control" placeholder="jan.kowalski@firma.pl" required>
                 </div>
                 <div class="form-group">
                   <label for="formPhone">Numer Telefonu *</label>
-                  <input type="tel" id="formPhone" class="form-control" placeholder="[+48 ... ... ...]" required>
+                  <input type="tel" id="formPhone" class="form-control" placeholder="+48 600 000 000" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="formInterest">Kategoria zapotrzebowania:</label>
                 <select id="formInterest" class="form-control">
-                  <option value="pv">[Dostawa Modułów Fotowoltaicznych (Hurt / Kontenery)]</option>
-                  <option value="bess">[Przemysłowe Magazyny Energii BESS]</option>
-                  <option value="inverters">[Falowniki Komercyjne / Wielkoskalowe]</option>
-                  <option value="hvac">[Przemysłowe Pompy Ciepła Monoblok]</option>
-                  <option value="complete_project">[Kompleksowe wyposażenie Farmy PV / Projektu OZE]</option>
-                  <option value="other">[Inne zapytanie handlowe]</option>
+                  <option value="pv">Dostawa Modułów Fotowoltaicznych (Hurt / Kontenery)</option>
+                  <option value="bess">Przemysłowe Magazyny Energii BESS</option>
+                  <option value="inverters">Falowniki Komercyjne / Wielkoskalowe</option>
+                  <option value="hvac">Przemysłowe Pompy Ciepła Monoblok R290</option>
+                  <option value="complete_project">Kompleksowe Wyposażenie Farmy PV / Projekt OZE</option>
+                  <option value="other">Inne zapytanie handlowo-techniczne</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="formCapacity">Szacowana moc instalacji / wolumen (np. 50kW, 1MW, 5 palet):</label>
-                <input type="text" id="formCapacity" class="form-control" placeholder="[np. 1.2 MWp lub 500 kWh]">
+                <label for="formCapacity">Szacowana moc instalacji lub wolumen zamówienia:</label>
+                <input type="text" id="formCapacity" class="form-control" placeholder="np. 1.5 MWp, 430 kWh, 6 palet">
               </div>
 
               <div class="form-group">
                 <label for="formMessage">Treść zapytania / Wymagania techniczne *</label>
-                <textarea id="formMessage" class="form-control" placeholder="[Opisz szczegóły zapytania, termin realizacji, preferowane marki komponentów oraz miejsce ewentualnego rozładunku...]" required></textarea>
+                <textarea id="formMessage" class="form-control" placeholder="Opisz specyfikację projektu, oczekiwany termin dostawy oraz preferowane technologie..." required></textarea>
               </div>
 
               <div class="checkbox-group">
                 <input type="checkbox" id="formConsent" required>
                 <label for="formConsent" class="checkbox-label">
-                  Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z <span class="ph-tag">[Polityką Prywatności RODO]</span> w celu przygotowania kalkulacji i odpowiedzi handlowej.
+                  Wyrażam zgodę na przetwarzanie danych osobowych przez GreenEra Sp. z o.o. zgodnie z Polityką Prywatności RODO w celu przygotowania kalkulacji handlowo-technicznej.
                 </label>
               </div>
 
               <button type="submit" class="btn btn-primary" style="width: 100%;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                <span>[WYŚLIJ ZAPYTANIE OFERTOWE DO DZIAŁU B2B]</span>
+                <span>Wyślij zapytanie do doradcy B2B</span>
               </button>
 
-              <div id="formSuccessAlert" style="display:none; margin-top:16px; padding:12px; background: rgba(16,185,129,0.15); border: 1px solid var(--color-primary); border-radius: var(--radius-md); color: var(--color-primary); font-size: 0.9rem; text-align: center;">
-                ✓ Dziękujemy! Zapytanie testowe zostało zarejestrowane w szablonie demonstracyjnym.
+              <div id="formSuccessAlert" style="display:none; margin-top:16px; padding:14px; background: rgba(16,185,129,0.12); border: 1px solid var(--color-primary); border-radius: var(--radius-md); color: var(--color-primary); font-size: 0.92rem; text-align: center;">
+                ✓ Dziękujemy! Zapytanie ofertowe zostało pomyślnie przekazane do działu inżynieryjnego GreenEra.
               </div>
             </form>
           </div>
@@ -962,17 +993,18 @@
       <div class="footer-grid">
         <!-- Kolumna 1: Marka & Nota -->
         <div class="footer-brand">
-          <div class="brand-logo" style="margin-bottom: 12px;">
+          <div class="brand-logo" style="margin-bottom: 14px;">
             <div class="brand-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <span class="ph-tag">[NAZWA FIRMY OZE]</span>
+            <span class="brand-name" style="color: #ffffff;">Green<span class="brand-accent">Era</span></span>
           </div>
           <p>
-            Dystrybutor certyfikowanych komponentów Odnawialnych Źródeł Energii dla instalatorów, deweloperów farm i generalnych wykonawców projektów transformacji energetycznej.
+            Autoryzowany dystrybutor certyfikowanych komponentów Odnawialnych Źródeł Energii dla instalatorów, generalnych wykonawców i deweloperów farm OZE w Europie Środkowej.
           </p>
-          <div style="font-size: 0.8rem; color: var(--text-muted);">
-            Status bazy szablonu: <span class="ph-tag">[SZABLON GOTOWY DO EDYCJI]</span>
+          <div class="footer-status">
+            <span class="hub-status-dot"></span>
+            <span>Centrum Operacyjne GreenEra: Aktywne</span>
           </div>
         </div>
 
@@ -981,24 +1013,24 @@
           <h4 class="footer-heading">Nawigacja</h4>
           <ul class="footer-links">
             <li><a href="#home">Strona Główna</a></li>
-            <li><a href="#about">Informacje Ogólne</a></li>
+            <li><a href="#about">O GreenEra</a></li>
             <li><a href="#products">Oferta Produktowa</a></li>
             <li><a href="#pricing">Cennik Hurtowy B2B</a></li>
             <li><a href="#distribution">Dystrybucja i Dostawa</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#contact">Kontakt B2B</a></li>
           </ul>
         </div>
 
         <!-- Kolumna 3: Asortyment Specjalistyczny -->
         <div>
-          <h4 class="footer-heading">Segmenty OZE</h4>
+          <h4 class="footer-heading">Technologie OZE</h4>
           <ul class="footer-links">
-            <li><a href="#products">[Moduły Bifacial N-Type]</a></li>
-            <li><a href="#products">[Magazyny Energii BESS]</a></li>
-            <li><a href="#products">[Inwertery Hybrydowe HV]</a></li>
-            <li><a href="#products">[Przemysłowe Pompy R290]</a></li>
-            <li><a href="#products">[Konstrukcje Magnelis®]</a></li>
-            <li><a href="#products">[Kable i Złącza Solarnie]</a></li>
+            <li><a href="#products">Moduły Bifacial N-Type TOPCon</a></li>
+            <li><a href="#products">Przemysłowe Magazyny BESS</a></li>
+            <li><a href="#products">Inwertery Hybrydowe HV</a></li>
+            <li><a href="#products">Pompy Ciepła Monoblok R290</a></li>
+            <li><a href="#products">Konstrukcje Gruntowe Magnelis®</a></li>
+            <li><a href="#products">Okablowanie Solarne CPR B2ca</a></li>
           </ul>
         </div>
 
@@ -1006,105 +1038,57 @@
         <div>
           <h4 class="footer-heading">Dokumenty B2B</h4>
           <ul class="footer-links">
-            <li><a href="#pricing" id="footerDownloadPdfLink">[Pobierz Cennik (PDF)]</a></li>
-            <li><a href="#" onclick="alert('Miejsce na link do Ogólnych Warunków Sprzedaży (OWS)'); return false;">[Ogólne Warunki Sprzedaży OWS]</a></li>
-            <li><a href="#" onclick="alert('Miejsce na link do Warunków Gwarancji'); return false;">[Procedura Gwarancyjna i Serwis]</a></li>
-            <li><a href="#" onclick="alert('Miejsce na Certyfikaty i Deklaracje CE'); return false;">[Karty Katalogowe i Certyfikaty]</a></li>
-            <li><a href="#" onclick="alert('Miejsce na Politykę Prywatności'); return false;">[Polityka Prywatności & RODO]</a></li>
+            <li><a href="#pricing" id="footerDownloadPdfLink">Pobierz Cennik Hurtowy (PDF)</a></li>
+            <li><a href="#about" id="footerOpenGuideBtn">Standardy Jakości GreenEra</a></li>
+            <li><a href="#contact">Karty Katalogowe i Certyfikaty CE</a></li>
+            <li><a href="#contact">Ogólne Warunki Sprzedaży (OWS)</a></li>
+            <li><a href="#contact">Procedury Gwarancyjne SLA</a></li>
+            <li><a href="#contact">Polityka Prywatności & RODO</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>
-          © <span id="currentYear">2026</span> <span class="ph-tag">[NAZWA TWOJEJ FIRMY OZE SP. Z O.O.]</span>. Wszelkie prawa zastrzeżone.
+          © <span id="currentYear">2026</span> <strong>GreenEra Sp. z o.o.</strong> Wszelkie prawa zastrzeżone.
         </div>
-        <div style="display:flex; gap: 20px;">
-          <span>[KRS: 0000000000]</span>
-          <span>[NIP: 0000000000]</span>
-          <span>[REGON: 000000000]</span>
+        <div class="footer-legal-tags">
+          <span>KRS: 0000984210</span>
+          <span>NIP: 525-294-71-33</span>
+          <span>REGON: 389240182</span>
+          <span>BDO: 000582910</span>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================================
-       MODAL 1: INSTRUKCJA I LISTA SEKCJI DO UZUPEŁNIENIA
-       ========================================================================== -->
-  <div class="modal-overlay" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
-    <div class="modal-dialog">
-      <button type="button" class="modal-close-btn" id="btnCloseGuide" aria-label="Zamknij okno">✕</button>
-      <h3 id="guideTitle" style="margin-bottom: 12px; font-size: 1.4rem;">
-        📋 Przewodnik Uzupełniania Szablonu OZE
-      </h3>
-      <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
-        Niniejszy szablon został przygotowany z kompletną strukturą wymaganą dla przedsiębiorstwa w branży Odnawialnych Źródeł Energii (OZE). Wypełnij zaznaczone pola <code>[NAWIASAMI]</code> swoimi danymi.
-      </p>
-
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div class="oze-card" style="padding: 16px;">
-          <strong>1. Strona Główna:</strong>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
-            Wpisz oficjalną nazwę spółki w logo, hasło główne (slogan marketingowy), podtytuł oraz aktualne statystyki dostarczonej mocy (MWp) i powierzchni logistycznej.
-          </p>
-        </div>
-
-        <div class="oze-card" style="padding: 16px;">
-          <strong>2. Informacje Ogólne:</strong>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
-            Uzupełnij historię firmy, filary strategiczne (misję, zaplecze inżynieryjne, procedury gwarancyjne) oraz wykaz posiadanych certyfikatów (ISO, TÜV, UDT).
-          </p>
-        </div>
-
-        <div class="oze-card" style="padding: 16px;">
-          <strong>3. Oferta Specjalistycznych Produktów i Cennik:</strong>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
-            Wprowadź docelowe kody SKU, specyfikacje techniczne (moc, sprawność, wymiary, chemia ogniw) oraz stawki cenowe netto/brutto w tabeli cennikowej z rabatami ilościowymi.
-          </p>
-        </div>
-
-        <div class="oze-card" style="padding: 16px;">
-          <strong>4. Metody Dystrybucji i Dostawy:</strong>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
-            Skonfiguruj warunki dostaw flotą HDS, czasy spedycji drobnicowej, lokalizację i zasady awizacji w hubie magazynowym oraz progi darmowej dostawy.
-          </p>
-        </div>
-
-        <div class="oze-card" style="padding: 16px;">
-          <strong>5. Dane Kontaktowe i Rejestrowe:</strong>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">
-            Uzupełnij NIP, REGON, KRS, BDO, numery telefonów do działu handlowego i serwisu, adresy e-mail oraz dane do formularza zapytań B2B.
-          </p>
-        </div>
-      </div>
-
-      <div style="margin-top: 24px; text-align: right;">
-        <button type="button" class="btn btn-primary btn-sm" id="btnConfirmGuide">Rozumiem, przejdź do szablonu</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       MODAL 2: KARTA KATALOGOWA PRODUKTU (PODGLĄD SPECYFIKACJI)
+       MODAL: KARTA KATALOGOWA PRODUKTU (PODGLĄD SPECYFIKACJI)
        ========================================================================== -->
   <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
     <div class="modal-dialog">
       <button type="button" class="modal-close-btn" id="btnCloseProductModal" aria-label="Zamknij">✕</button>
-      <span class="ph-tag" id="modalProductSku">[SKU: ...]</span>
-      <h3 id="modalProductTitle" style="margin: 10px 0 16px 0; font-size: 1.4rem;">[Nazwa Produktu]</h3>
+      <span class="product-sku-badge" id="modalProductSku">SKU: GE-PV-TOPCON-585</span>
+      <h3 id="modalProductTitle" style="margin: 10px 0 16px 0; font-size: 1.45rem; font-weight: 700;">Specyfikacja Techniczna Komponentu</h3>
       
-      <div class="ph-block">
-        <strong>[KARTA KATALOGOWA I SPECYFIKACJA SZCZEGÓŁOWA]:</strong><br>
-        Miejsce na pełną tabelę parametrów technicznych: charakterystyka prądowo-napięciowa (I-V), współczynniki temperaturowe (Pmax, Voc, Isc), obciążenia mechaniczne (wiatr/śnieg w Pa), klasa szczelności IP, schematy połączeniowe i certyfikaty zgodności.
+      <div class="modal-spec-content">
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px;">
+          Pełna karta katalogowa zawiera parametry prądowo-napięciowe (I-V), współczynniki temperaturowe (Pmax, Voc, Isc), obciążenia mechaniczne (wiatr/śnieg do 5400 Pa), klasę szczelności IP68 oraz atesty zgodności TÜV / CE.
+        </p>
+        <div class="modal-spec-highlights">
+          <div class="modal-spec-pill">✓ Komponent Tier 1 BloombergNEF</div>
+          <div class="modal-spec-pill">✓ Autoryzowana gwarancja w Polsce</div>
+          <div class="modal-spec-pill">✓ Badanie Flash Data przed ekspedycją</div>
+        </div>
       </div>
 
-      <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
-        <button type="button" class="btn btn-secondary btn-sm" onclick="alert('Miejsce na pobranie pliku PDF karty katalogowej wybranego produktu.');">
+      <div style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+        <button type="button" class="btn btn-secondary btn-sm" id="btnDownloadSpecSheet">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          [Pobierz Kartę Katalogową PDF]
+          Pobierz Kartę Katalogową PDF
         </button>
         <a href="#contact" class="btn btn-primary btn-sm" id="modalCtaContact">
-          [Zapytaj o ten produkt]
+          Zapytaj doradcę o ten produkt
         </a>
       </div>
     </div>

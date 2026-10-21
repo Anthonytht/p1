@@ -1,76 +1,71 @@
-# ☀️ Portal OZE - Szablon Witryny dla Firmy z Branży Odnawialnych Źródeł Energii
+# ☀️ GreenEra - Nowoczesny Portal B2B dla Branży OZE
 
-Kompletna, nowoczesna i w pełni responsywna strona internetowa klasy Enterprise dla przedsiębiorstwa z branży **OZE (Odnawialne Źródła Energii)**, przygotowana w formie elastycznego szablonu z wyznaczonymi sekcjami do uzupełnienia danymi Twojej firmy.
+Oficjalny portal internetowy klasy Enterprise dla **GreenEra Sp. z o.o.** – wiodącego dystrybutora i integratora odnawialnych źródeł energii, przemysłowych magazynów energii BESS oraz komponentów fotowoltaicznych Tier 1.
+
+Strona została zaprojektowana w nowoczesnym, czystym i minimalistycznym stylu (*clean tech*), kojarzącym się z innowacjami, niezawodnością i nowymi możliwościami transformacji energetycznej.
 
 ---
 
-## 🚀 Jak uruchomić stronę?
-Strona została zbudowana w czystym, wysoce zoptymalizowanym stosie **HTML5 + Vanilla CSS3 + Vanilla JavaScript (ES6+)**, dzięki czemu **nie wymaga instalacji Node.js, serwerów ani żadnych zewnętrznych bibliotek**.
+## 🚀 Jak uruchomić portal?
+Projekt został stworzony w czystym, zoptymalizowanym stosie **HTML5 + Vanilla CSS3 + Vanilla JavaScript (ES6+)**. **Nie wymaga instalacji Node.js, serwerów ani zewnętrznych zależności**.
 
-1. Otwórz plik `index.html` bezpośrednio w dowolnej przeglądarce internetowej (Chrome, Edge, Firefox, Safari, Opera):
+1. Otwórz plik `index.html` bezpośrednio w dowolnej nowoczesnej przeglądarce (Chrome, Edge, Firefox, Safari):
    - Kliknij dwukrotnie plik `index.html` w eksploratorze plików, **lub**
-   - Wpisz w pasku adresu przeglądarki ścieżkę:  
+   - Wklej w pasku adresu przeglądarki ścieżkę:  
      `file:///C:/Users/student/Documents/Kowalski%20Aleksander/p1/index.html`
 
 ---
 
-## 📂 Struktura Sekcji (Zgodnie z wymaganiami)
+## 🏢 Dane Przedsiębiorstwa GreenEra
+- **Pełna nazwa**: GreenEra Sp. z o.o.
+- **Siedziba główna**: Al. Jerozolimskie 142, 02-305 Warszawa, Polska
+- **Hub Logistyczny**: Park Logistyczny GreenEra Hub A2, ul. Przemysłowa 15, 05-850 Ożarów Mazowiecki
+- **NIP**: 525-294-71-33
+- **REGON**: 389240182
+- **KRS**: 0000984210 (Sąd Rejonowy dla m.st. Warszawy)
+- **BDO**: 000582910
+- **Kapitał zakładowy**: 5 000 000 PLN (opłacony w całości)
+- **Infolinia B2B**: +48 22 307 90 10
+- **Wsparcie Techniczne**: +48 22 307 90 20
+- **E-mail ogólny**: kontakt@greenera.pl | **Wyceny**: b2b@greenera.pl
 
-Wszystkie sekcje posiadają profesjonalną strukturę wizualną, a ich treść biznesowa została oznaczona jako **pola do uzupełnienia `[...]`**:
+---
+
+## 📂 Struktura Sekcji Portalu
 
 1. **Strona Główna (Hero Section)**:
+   - Slogan: *Energia Przyszłości. Otwórz swój biznes na nowe możliwości.*
    - Dynamiczny baner powitalny z fotorealistyczną grafiką farmy fotowoltaicznej, magazynów BESS i turbin wiatrowych.
-   - Pola na hasło marketingowe, podtytuł oferty oraz liczniki zrealizowanych projektów (+X MW mocy, powierzchnia magazynowa, czas dostawy).
-   - Przyciski szybkiego przejścia (CTA) do oferty i warunków logistycznych.
+   - Wskaźniki skali działalności: +520 MW dostarczonej mocy, 25 000 m² powierzchni magazynowej klasy A+, czas dostawy 24/48h.
+   - Szybkie akcje CTA prowadzące do oferty i warunków logistycznych.
 
-2. **Informacje Ogólne (O firmie)**:
-   - Przestrzeń na historię firmy, profil działalności i strukturę operacyjną.
-   - 3 Filary strategiczne: Misja i transformacja OZE, Inżynieria technologiczna, Gwarancja i polski serwis SLA.
-   - Pasek certyfikatów i norm (ISO 9001/14001, TÜV Rheinland, NC RfG / UDT, standard ESG).
+2. **O GreenEra (Informacje Ogólne)**:
+   - Profil działalności: dystrybucja Tier 1, magazyny energii BESS, wsparcie inżynieryjne.
+   - 3 Filary strategiczne: *Zielona Dekarbonizacja*, *Inżynieria & Systemy BESS*, *Gwarancja SLA & Serwis PL*.
+   - Pasek certyfikatów i akredytacji: ISO 9001/14001, TÜV Rheinland, NC RfG / UDT, standard ESG & EPD, BloombergNEF Tier 1.
 
-3. **Oferta Specjalistycznych Produktów wraz z Cennikiem**:
-   - **Katalog produktów**: filtry kategorii (Moduły PV, Magazyny BESS, Falowniki, Pompy ciepła HVAC, Konstrukcje i okablowanie) oraz dynamiczna wyszukiwarka na żywo.
-   - Karty produktów z parametrami technicznymi (moc Wp, sprawność %, chemia ogniw, gwarancja) i przyciskami szczegółów.
-   - **Interaktywny Cennik Hurtowy B2B**:
-     - Przełącznik walut: **PLN / EUR (€)** (automatyczne przeliczanie kwot).
-     - Przełącznik podatkowy: **Cena Netto / Brutto (+23% VAT)**.
-     - Tabela progów rabatowych przy zamówieniach paletowych i kontenerowych.
-     - Przycisk pobierania pliku cennika PDF.
+3. **Oferta Produktowa i Cennik B2B**:
+   - Katalog produktów z filtrami (Moduły PV, BESS, Falowniki, Pompy ciepła, Konstrukcje i kable) oraz wyszukiwarką na żywo.
+   - Karty produktów ze specyfikacją techniczną (moc Wp, sprawność, chemia ogniw, gwarancje) i oknem modala ze szczegółami.
+   - Interaktywna Tabela Cennika B2B:
+     - Przełącznik walut: **PLN / EUR (€)**
+     - Przełącznik podatku: **Cena Netto / Brutto (+23% VAT)**
+     - Rabaty wolumenowe i stany magazynowe w GreenEra Hub A2.
 
-4. **Metody Dystrybucji i Dostawy**:
-   - 4 Dedykowane kanały logistyczne: Flota własna z dźwigami HDS, Przesyłki paletowe 24/48h (Dachser/Raben), Odbiór z centralnego hubu magazynowego oraz Dostawy FTL (Just-In-Time) na farmy fotowoltaiczne.
-   - Wizualizacja nowoczesnego centrum dystrybucyjnego klasy A+.
-   - **Interaktywny Kalkulator Logistyczny**: dynamiczne szacowanie czasu dostawy i kosztów netto w zależności od województwa i gabarytu ładunku.
+4. **Metody Dystrybucji i Logistyka**:
+   - 4 kanały dostaw: Dedykowana flota GreenEra z HDS, spedycja paletowa 24/48h (Dachser/Schenker), odbiór osobisty z hubu A2, dostawy FTL z portów morskich Just-In-Time.
+   - Prezentacja centrum dystrybucyjnego 25 000 m² z kontrolą Flash Data i testami EL.
+   - Interaktywny kalkulator szacunkowego czasu i kosztu dostawy wg województwa i typu ładunku.
 
-5. **Kontakt & Zapytania B2B**:
-   - Dane rejestrowe i teleadresowe: NIP, REGON, KRS, BDO, adres biura handlowego, infolinia i dedykowane skrzynki e-mail.
-   - Stylizowana mapa wektorowa z koordynatami GPS magazynu centralnego.
-   - Kompleksowy formularz zapytań ofertowych B2B z walidacją danych, wyborem segmentu OZE, szacowanej mocy instalacji oraz potwierdzeniem RODO.
-
----
-
-## 🛠️ Specjalne Narzędzia dla Edytora Szablonu
-
-- **Pasek Narzędziowy Szablonu (Top Bar)**:
-  - Przycisk **"Podświetl pola [DO UZUPEŁNIENIA]"**: natychmiastowo aktywuje pulsujące ramki wokół każdego niespersonalizowanego pola w dokumencie wraz z licznikiem pozostałych pól.
-  - Przycisk **"Lista sekcji"**: otwiera modal z instrukcją krok-po-kroku, co należy uzupełnić w danej sekcji.
-- **Przełącznik Trybu Jasny / Ciemny**:
-  - Domyślny elegancki motyw grafitowy (Dark Tech Eco) lub czysty motyw dzienny (Clean Daylight Eco), z zapisem preferencji w `localStorage`.
+5. **Kontakt & Zapytania Ofertowe**:
+   - Kompletne dane rejestrowe i teleadresowe spółki.
+   - Stylizowana mapa wektorowa z koordynatami GPS hubu logistycznego (węzeł autostrady A2).
+   - Formularz zapytań B2B z walidacją, wyborem segmentu OZE i potwierdzeniem RODO.
 
 ---
 
-## 📁 Spis Plików w Projekcie
-
-```
-p1/
-├── index.html              # Główny dokument strony z semantyczną strukturą i placeholderami
-├── style.css               # Nowoczesny system designu CSS (zmienne, glassmorphism, responsywność)
-├── app.js                  # Skrypt interaktywny (filtry, cennik, kalkulator dostaw, modale, motyw)
-├── README.md               # Dokumentacja wdrożeniowa i instrukcja obsługi
-└── assets/
-    └── images/             # Zoptymalizowane grafiki wysokiej rozdzielczości
-        ├── hero_banner.jpg # Fotografia infrastruktury OZE (PV + BESS + wiatraki)
-        ├── product_pv.jpg  # Render modułu bifacial N-Type
-        ├── product_bess.jpg# Render szafy magazynu energii BESS
-        └── logistics_hub.jpg# Fotografia parku logistycznego i floty transportowej
-```
+## 🎨 Cechy Designu i UX
+- **Czysta, nowoczesna estetyka**: stonowana paleta oparta na głębokim graficie, szmaragdowej czystej zieleni, akcentach błękitu i subtelnych liniach.
+- **Maksymalna czytelność**: wysoki kontrast, zoptymalizowana typografia (Plus Jakarta Sans i Space Grotesk), brak agresywnych, krzykliwych neonów.
+- **Tryb Jasny / Ciemny**: płynne przełączanie z zapamiętywaniem preferencji w `localStorage`.
+- **Pełna responsywność**: perfekcyjne dopasowanie na ekranach 4K, laptopach, tabletach oraz smartfonach.
